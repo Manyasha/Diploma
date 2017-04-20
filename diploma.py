@@ -8,7 +8,7 @@ import sympy as sy
 
 x1, x2, x3, x4 = sy.symbols('x1 x2 x3 x4')
 
-xx = (x1, x2, x3, x4)
+xx = (x1, x2)
 f = 100*(x2 - x1**2)**2 + (1 - x1)**2
 f_n = lambdify(xx, f, modules='numpy')
 
@@ -19,19 +19,28 @@ jac_fn = [lambdify(xx, jf, modules='numpy') for jf in jac_f]
 
 def f_v(zz):
     """ Helper for receiving vector parameters """
-    return f_n(zz[0], zz[1], zz[2], zz[3])
+    return f_n(zz[0], zz[1])
 
 
 def jac_v(zz):
     """ Jacobian Helper for receiving vector parameters """
-    return np.array([jfn(zz[0], zz[1], zz[2], zz[3]) for jfn in jac_fn])
+    return np.array([jfn(zz[0], zz[1]) for jfn in jac_fn])
 
 
-bnds = ((-1, 1), (-1, 1), (-1, 1), (-1, 1))
-zz0 = np.array([1, 1, 1, 1])
+bnds = ((-1, 1), (-1, 1))
+zz0 = np.array([0, 0])
 
 rslts = minimize(f_v, zz0, method='SLSQP', jac=jac_v, bounds=bnds)
-print(rslts)
+res = minimize(f_v, zz0, method='Nelder-Mead')
+res0 = minimize(f_v, zz0, method='Powell')
+res1 = minimize(f_v, zz0)
+res2 = minimize(f_v, zz0, method='CG')
+
+print(rslts.x, rslts.nit)
+print(res.x, res.nit)
+print(res0.x, res0.nit)
+print(res1.x, res1.nit)
+print(res2.x, res2.nit)
 
 
 def d():
