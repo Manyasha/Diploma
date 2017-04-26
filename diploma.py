@@ -17,17 +17,18 @@ f_n = lambdify(xx, f, modules='numpy')
 jac_f = [f.diff(x) for x in xx]
 jac_fn = [lambdify(xx, jf, modules='numpy') for jf in jac_f]
 
-print(jac_f)
-print(jac_fn)
-
 def f_v(zz):
     """ Helper for receiving vector parameters """
     return f_n(zz[0], zz[1])
 
-
 def jac_v(zz):
     """ Jacobian Helper for receiving vector parameters """
     return np.array([jfn(zz[0], zz[1]) for jfn in jac_fn])
+
+def Gradient(f, x):
+    gradient_f = [diff(f,x_comp) for x_comp in x_array[0:len(x)]]
+    gradient_fn = [lambdify(x_array[0:len(x)], gradient_fn_comp, modules='numpy') for gradient_fn_comp in gradient_f]
+    return np.array([gradient_el(*x) for gradient_el in gradient_fn])
 
 bnds = ((-1, 1), (-1, 1))
 zz0 = np.array([0, 0])
@@ -39,8 +40,6 @@ res1 = minimize(f_v, zz0)
 print(rslts.x, rslts.nit)
 print(res0.x, res0.nit)
 print(res1.x, res1.nit)
-
-
 
 def d():
     return x1**3 + x2**2;
@@ -57,10 +56,8 @@ def gradient(f, x0):
         grad[i] = diff(f, x[i]).subs(x0).n()
     return grad
 
-def newGradient(f, x0):
-    return [diff(f,x) for x in x_array[0:len(x0)]]
+print(Gradient(f,[-1.2,1]))
 
 #print(gradient(d(), np.array([2], dtype=float)))
 print(gradient(f1(),{x1: -1.2, x2: 1}))
-print(newGradient(f1(),{x1: -1.2, x2: 1}))
 
