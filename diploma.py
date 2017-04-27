@@ -3,6 +3,7 @@ import numpy as np
 from scipy.optimize import minimize
 from sympy.utilities.lambdify import lambdify
 import sympy as sy
+import secondaryFunctions as sf
 
 #sy.init_printing()  # LaTeX like pretty printing for IPython
 
@@ -24,11 +25,6 @@ def f_v(zz):
 def jac_v(zz):
     """ Jacobian Helper for receiving vector parameters """
     return np.array([jfn(zz[0], zz[1]) for jfn in jac_fn])
-
-def Gradient(f, x):
-    gradient_f = [diff(f,x_comp) for x_comp in x_array[0:len(x)]]
-    gradient_fn = [lambdify(x_array[0:len(x)], gradient_fn_comp, modules='numpy') for gradient_fn_comp in gradient_f]
-    return np.array([gradient_el(*x) for gradient_el in gradient_fn])
 
 bnds = ((-1, 1), (-1, 1))
 zz0 = np.array([0, 0])
@@ -56,7 +52,7 @@ def gradient(f, x0):
         grad[i] = diff(f, x[i]).subs(x0).n()
     return grad
 
-print(Gradient(f,[-1.2,1]))
+print(sf.Gradient(f,[-1.2,1]))
 
 #print(gradient(d(), np.array([2], dtype=float)))
 print(gradient(f1(),{x1: -1.2, x2: 1}))
