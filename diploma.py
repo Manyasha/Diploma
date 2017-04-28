@@ -4,6 +4,9 @@ from scipy.optimize import minimize
 from sympy.utilities.lambdify import lambdify
 import sympy as sy
 import secondaryFunctions as sf
+#import matplotlib.pyplot as plt
+#from numdifftools import Gradient
+#import numdifftools.nd_algopy as nda
 
 #sy.init_printing()  # LaTeX like pretty printing for IPython
 
@@ -13,6 +16,9 @@ xx = (x1, x2)
 x_array = (x1, x2, x3, x4)
 f = 100*(x2 - x1**2)**2 + (1 - x1)**2
 f_n = lambdify(xx, f, modules='numpy')
+
+#dfun = nd.Gradient(f_n)
+#print(dfun([1,2,3]))
 
 # Build Jacobian:
 jac_f = [f.diff(x) for x in xx]
@@ -52,7 +58,8 @@ def gradient(f, x0):
         grad[i] = diff(f, x[i]).subs(x0).n()
     return grad
 
-print(sf.Gradient(f,[-1.2,1]))
+print(sf.Hessian(f,[0,0]))
+print(sf.Hessian(f,[0,0])*sf.Gradient(f,[-1.2,1]).T)
 
 #print(gradient(d(), np.array([2], dtype=float)))
 print(gradient(f1(),{x1: -1.2, x2: 1}))
