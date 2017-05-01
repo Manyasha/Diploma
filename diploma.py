@@ -1,5 +1,6 @@
 from sympy import diff, symbols, Symbol, cos, sin
 import numpy as np
+import math
 from scipy.optimize import minimize
 from sympy.utilities.lambdify import lambdify
 import sympy as sy
@@ -58,8 +59,23 @@ def gradient(f, x0):
         grad[i] = diff(f, x[i]).subs(x0).n()
     return grad
 
-print(sf.Hessian(f,[0,0]))
-print(sf.Hessian(f,[0,0])*sf.Gradient(f,[-1.2,1]).T)
+#print(sf.Hessian(f,[0,0]))
+#print(sf.Hessian(f,[0,0])*sf.Gradient(f,[-1.2,1]).T)
+x = 5
+s_k = {
+    0: lambda x: x * 5,
+    1: lambda x: x + 7,
+    2: self
+    }.get(6,x - 2)
+print(s_k)
+
+print(sf.Gradient(f, [0,0]))
+print(sf.norm(sf.Gradient(f, [0,0])))
+print(sf.BreakCriterion(f, [1,1], 0.01))
+print(sf.gamma(f, [0,0], [1,1]))
+print(np.matrix([1,2]))
+print(np.matrix([2,4]).T)
+print(np.matrix([1,2])*np.matrix([2,4]).T)
 
 #print(gradient(d(), np.array([2], dtype=float)))
 print(gradient(f1(),{x1: -1.2, x2: 1}))
