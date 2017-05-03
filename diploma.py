@@ -2,7 +2,7 @@ from sympy import diff, symbols, Symbol, cos, sin
 from sympy.solvers import solve
 import numpy as np
 import math
-from 4stepsConjugateGradientMethod import 4stepsCGM
+from conjugateGradientMethods import fourStepsCGM
 from scipy.optimize import minimize
 from sympy.utilities.lambdify import lambdify
 import sympy as sy
@@ -21,11 +21,11 @@ x_array = (x1, x2, x3, x4)
 f = 100*(x2 - x1**2)**2 + (1 - x1)**2
 f_n = lambdify(xx, f, modules='numpy')
 print(f)
-
+print(np.array(np.matrix([1,2])).flatten())
 print('----')
 print(sf.findStep(f, np.array([-1.2, 1]), np.array([-215.6, -88])))
 print('----')
-print(4stepsCGM(f, [-1.2, 1], 0.01))
+print(fourStepsCGM(f, [-1.2, 1], 0.01))
 print('----')
 k_test = np.array([5, 1]) + t_k*np.array([2, 2])
 

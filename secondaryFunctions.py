@@ -34,6 +34,9 @@ def gamma(f, x, s):
     return numerator / denominator
 
 def findStep(f, x_k, s_k):
+    print("==============")
+    print(x_k)
+    print(s_k)
     point = x_k + betta*s_k
     print(point)
     mod_f = lambdify(x_array[0:len(x_k)], f, modules='numpy')
@@ -43,5 +46,6 @@ def findStep(f, x_k, s_k):
     betta_min = 0 if len(betta_array) == 0 else betta_array.min()
     if len(betta_array) == 0:
         print("Betta Array length = 0. Something went wrong")
+    print("==============")
     return betta_min
     
