@@ -1,14 +1,15 @@
 import numpy as np
 import cmath as cm
 from math import sqrt
-from sympy import diff, symbols
+from sympy import diff, symbols, Symbol
 from sympy.solvers import solve
 from sympy.utilities.lambdify import lambdify
-#from mpmath import matrix
+from scipy.optimize import minimize
 
 #sy.init_printing()  # LaTeX like pretty printing for IPython
 
-x1, x2, x3, x4, betta = symbols('x1 x2 x3 x4 betta')
+x1, x2, x3, x4 = symbols('x1 x2 x3 x4')
+betta = Symbol('betta', real=True, positive=True)
 x_array = (x1, x2, x3, x4)
 
 def Gradient(f, x):
@@ -34,18 +35,15 @@ def gamma(f, x, s):
     return numerator / denominator
 
 def findStep(f, x_k, s_k):
-    print("==============")
-    print(x_k)
-    print(s_k)
     point = x_k + betta*s_k
-    print(point)
     mod_f = lambdify(x_array[0:len(x_k)], f, modules='numpy')
-    print(mod_f(*point))
-    print(diff(mod_f(*point), betta))
-    betta_array = np.array([el for el in solve(diff(mod_f(*point), betta), cubics=False) if el > 0 or el == 0], dtype=float)
+    betta_array = np.array([el for el in solve(diff(mod_f(*point), betta), rational=None, cubics=False, quartics=False) if el > 0 or el == 0])
+    print(betta_array)
     betta_min = 0 if len(betta_array) == 0 else betta_array.min()
     if len(betta_array) == 0:
         print("Betta Array length = 0. Something went wrong")
-    print("==============")
+    print(solve(diff(mod_f(*point), betta), rational=None, cubics=False, quartics=False))
+    #f_n = lambdify(betta, mod_f(*point), modules='numpy')
+    #betta_min = minimize(f_n, np.array([0]), method='Powell').x
     return betta_min
     

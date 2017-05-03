@@ -24,7 +24,8 @@ def fourStepsCGM(f, x0, eps):
         3: lambda x_k: -sf.Gradient(f, x_k) + sf.gamma(f, x_k, s_last[2])*s_last[2] + sf.gamma(f, x_k, s_last[1])*s_last[1] + sf.gamma(f, x_k, s_last[0])*s_last[0]
     }
 
-    while not sf.BreakCriterion(f, x0, eps):
+    while not sf.BreakCriterion(f, x_k, eps):
+        print("===========================")
         s_k = np.array(s.get(k, s.get(3))(x_k)).flatten()
         if k < 3:
             s_last[k] = s_k
@@ -35,7 +36,12 @@ def fourStepsCGM(f, x0, eps):
         
         betta_k = sf.findStep(f, x_k, s_k) 
         x_k1 = x_k + betta_k*s_k
+        print(x_k)
+        print(s_k)
+        print(k)
         x_k = x_k1
         k = k + 1
+        print("===========================")
     print(x_k)
+    
     
