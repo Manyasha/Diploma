@@ -1,6 +1,8 @@
 from sympy import diff, symbols, Symbol, cos, sin
+from sympy.solvers import solve
 import numpy as np
 import math
+from 4stepsConjugateGradientMethod import 4stepsCGM
 from scipy.optimize import minimize
 from sympy.utilities.lambdify import lambdify
 import sympy as sy
@@ -12,11 +14,24 @@ import secondaryFunctions as sf
 #sy.init_printing()  # LaTeX like pretty printing for IPython
 
 x1, x2, x3, x4 = sy.symbols('x1 x2 x3 x4')
+t_k = sy.symbols('t_k')
 
 xx = (x1, x2)
 x_array = (x1, x2, x3, x4)
 f = 100*(x2 - x1**2)**2 + (1 - x1)**2
 f_n = lambdify(xx, f, modules='numpy')
+print(f)
+
+print('----')
+print(sf.findStep(f, np.array([-1.2, 1]), np.array([-215.6, -88])))
+print('----')
+print(4stepsCGM(f, [-1.2, 1], 0.01))
+print('----')
+k_test = np.array([5, 1]) + t_k*np.array([2, 2])
+
+print(k_test)
+print(f_n(*k_test))
+print(solve(f))
 
 #dfun = nd.Gradient(f_n)
 #print(dfun([1,2,3]))
@@ -34,7 +49,7 @@ def jac_v(zz):
     return np.array([jfn(zz[0], zz[1]) for jfn in jac_fn])
 
 bnds = ((-1, 1), (-1, 1))
-zz0 = np.array([0, 0])
+zz0 = np.array([2, 2])
 
 rslts = minimize(f_v, zz0, method='SLSQP', jac=jac_v, bounds=bnds)
 res0 = minimize(f_v, zz0, method='Powell')
@@ -65,8 +80,8 @@ x = 5
 s_k = {
     0: lambda x: x * 5,
     1: lambda x: x + 7,
-    2: self
-    }.get(6,x - 2)
+    2: lambda x: x + 7
+    }.get(0,x - 2)(2)
 print(s_k)
 
 print(sf.Gradient(f, [0,0]))
