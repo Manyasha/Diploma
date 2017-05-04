@@ -5,11 +5,12 @@ from sympy import diff, symbols, Symbol
 from sympy.solvers import solve
 from sympy.utilities.lambdify import lambdify
 from scipy.optimize import minimize
+from scipy.optimize import minimize_scalar
 
 #sy.init_printing()  # LaTeX like pretty printing for IPython
 
 x1, x2, x3, x4 = symbols('x1 x2 x3 x4')
-betta = Symbol('betta', real=True, positive=True)
+beta = Symbol('beta', real=True, positive=True)
 x_array = (x1, x2, x3, x4)
 
 def Gradient(f, x):
@@ -35,15 +36,10 @@ def gamma(f, x, s):
     return numerator / denominator
 
 def findStep(f, x_k, s_k):
-    point = x_k + betta*s_k
+    point = x_k + beta*s_k
     mod_f = lambdify(x_array[0:len(x_k)], f, modules='numpy')
-    betta_array = np.array([el for el in solve(diff(mod_f(*point), betta), rational=None, cubics=False, quartics=False) if el > 0 or el == 0])
-    print(betta_array)
-    betta_min = 0 if len(betta_array) == 0 else betta_array.min()
-    if len(betta_array) == 0:
-        print("Betta Array length = 0. Something went wrong")
-    print(solve(diff(mod_f(*point), betta), rational=None, cubics=False, quartics=False))
-    #f_n = lambdify(betta, mod_f(*point), modules='numpy')
-    #betta_min = minimize(f_n, np.array([0]), method='Powell').x
-    return betta_min
-    
+    mod_fn = lambdify(beta, mod_f(*point), modules='numpy')       
+    beta_min = minimize_scalar(mod_fn).x
+    return 0 if beta_min < 0 else beta_min
+
+

@@ -2,7 +2,7 @@ from sympy import diff, symbols, Symbol, cos, sin
 from sympy.solvers import solve
 import numpy as np
 import math
-from conjugateGradientMethods import fourStepsCGM
+from conjugateGradientMethods import fourStepsCGM, threeStepsCGM
 from scipy.optimize import minimize
 from sympy.utilities.lambdify import lambdify
 import sympy as sy
@@ -18,15 +18,43 @@ t_k = sy.symbols('t_k')
 
 xx = (x1, x2)
 x_array = (x1, x2, x3, x4)
+
+
 f = 100*(x2 - x1**2)**2 + (1 - x1)**2
+f1 = (x1 + 10*x2)**2 + 5*(x3 - x4)**2 + (x2 - 2*x3)**4 + 10*(x1 - x4)**4
+f2 = (x1*x2)**2 * (1 - x1**2) * (1 - x1 - x2*(1 - x1)**5)**2
+f3 = (x1**2 + x2 - 11)**2 + (x1 + x2**2 - 7)**2
+
 f_n = lambdify(xx, f, modules='numpy')
 #print(f)
 #print(np.array(np.matrix([1,2])).flatten())
 #print('----')
 #print(sf.findStep(f, np.array([-1.2, 1]), np.array([-215.6, -88])))
 #print('----')
-print(fourStepsCGM(f, [-1.2, 1], 0.01))
+
+
 print('----')
+fourStepsCGM(f, [-1.2, 1], 0.01)
+print('----')
+threeStepsCGM(f, [-1.2, 1], 0.01)
+print('----')
+fourStepsCGM(f1, [3,-1,0,1], 0.01)
+print('----')
+threeStepsCGM(f1, [3,-1,0,1], 0.01)
+print('----')
+fourStepsCGM(f1, [1,1,1,1], 0.01)
+print('----')
+threeStepsCGM(f1, [1,1,1,1], 0.01)
+print('----')
+fourStepsCGM(f3, [1,1], 0.01)
+print('----')
+threeStepsCGM(f3, [1,1], 0.01)
+print('----')
+
+
+
+
+
 k_test = np.array([5, 1]) + t_k*np.array([2, 2])
 
 print(k_test)
