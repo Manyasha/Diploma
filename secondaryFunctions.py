@@ -31,8 +31,8 @@ def BreakCriterion(f, x, eps):
     return norm(Gradient(f, x)) < eps
 
 def gamma(f, x, s):
-    numerator = np.matrix(Gradient(f, x))*(Hessian(f, x)*np.matrix(s).T)
-    denominator = np.matrix(s)*(Hessian(f, x)*np.matrix(s).T)
+    numerator = np.matrix(Gradient(f, x))@(Hessian(f, x)*np.matrix(s).T)
+    denominator = np.matrix(s)@(Hessian(f, x)*np.matrix(s).T)
     return numerator / denominator
 
 def findStep(f, x_k, s_k):
@@ -42,4 +42,11 @@ def findStep(f, x_k, s_k):
     beta_min = minimize_scalar(mod_fn).x
     return 0 if beta_min < 0 else beta_min
 
-
+def printInfo(f, x0, ExpectedRes, ActualResFourCGM, ActualResThreeCGM):
+    test_f = "Test function: " + f
+    test_point = "Initial point: " + x0
+    exRes = "Expected Result: x* = " + ExpectedRes.x_star + " f* = " + ExpectedRes.f_star
+    acFourRes = "Actual Result 4 steps CGM: x* = " + ActualResFourCGM.x_star + " f* = " + ActualResFourCGM.f_star + " for k = %d" %(ActualResFourCGM.k) + " steps"
+    acThreeRes = "Actual Result 3 steps CGM: x* = " + ActualResThreeCGM.x_star + " f* = " + ActualResThreeCGM.f_star + " for k = %d" %(ActualResThreeCGM.k) + " steps"
+    breakLine = "/n"
+    print(test_f + breakLine + test_point + breakLine + exRes + breakLine + acRes)

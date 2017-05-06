@@ -25,6 +25,8 @@ f1 = (x1 + 10*x2)**2 + 5*(x3 - x4)**2 + (x2 - 2*x3)**4 + 10*(x1 - x4)**4
 f2 = (x1*x2)**2 * (1 - x1**2) * (1 - x1 - x2*(1 - x1)**5)**2
 f3 = (x1**2 + x2 - 11)**2 + (x1 + x2**2 - 7)**2
 
+print(type(f))
+
 f_n = lambdify(xx, f, modules='numpy')
 #print(f)
 #print(np.array(np.matrix([1,2])).flatten())
