@@ -1,6 +1,6 @@
 import numpy as np
 import cmath as cm
-from math import sqrt
+from math import sqrt, pow
 from sympy import diff, symbols, Symbol
 from sympy.solvers import solve
 from sympy.utilities.lambdify import lambdify
@@ -25,7 +25,11 @@ def Hessian(f, x):
     return np.matrix(hessian_fn)
 
 def norm(x):
-    return sqrt(sum([x_i**2 for x_i in x]))
+    try:
+        norm = sqrt(sum([pow(x_i,2) for x_i in x]))
+    except OverflowError:
+        norm = float('inf')
+    return norm
 
 def BreakCriterion(f, x, eps):
     return norm(Gradient(f, x)) < eps
@@ -42,11 +46,12 @@ def findStep(f, x_k, s_k):
     beta_min = minimize_scalar(mod_fn).x
     return 0 if beta_min < 0 else beta_min
 
-def printInfo(f, x0, ExpectedRes, ActualResFourCGM, ActualResThreeCGM):
-    test_f = "Test function: " + f
-    test_point = "Initial point: " + x0
-    exRes = "Expected Result: x* = " + ExpectedRes.x_star + " f* = " + ExpectedRes.f_star
-    acFourRes = "Actual Result 4 steps CGM: x* = " + ActualResFourCGM.x_star + " f* = " + ActualResFourCGM.f_star + " for k = %d" %(ActualResFourCGM.k) + " steps"
-    acThreeRes = "Actual Result 3 steps CGM: x* = " + ActualResThreeCGM.x_star + " f* = " + ActualResThreeCGM.f_star + " for k = %d" %(ActualResThreeCGM.k) + " steps"
-    breakLine = "/n"
-    print(test_f + breakLine + test_point + breakLine + exRes + breakLine + acRes)
+def printInfo(f, x0, eps, ExpectedRes, ActualResFourCGM, ActualResThreeCGM):
+    test_f = "Test function: " + str(f)
+    test_point = "Initial point: " + str(x0)
+    accuracy = "Accuracy of calculations: " + str(eps)
+    exRes = "Expected Result: x* = " + str(ExpectedRes['x_star']) + " f* = " + str(ExpectedRes['f_star'])
+    acFourRes = "" if len(ActualResFourCGM) == 0 else "Actual Result 4 steps CGM: x* = " + str(ActualResFourCGM['x_star']) + " f* = " + str(ActualResFourCGM['f_star']) + " for k = %d" %(ActualResFourCGM['k']) + " steps"
+    acThreeRes = "" if len(ActualResThreeCGM) == 0 else "Actual Result 3 steps CGM: x* = " + str(ActualResThreeCGM['x_star']) + " f* = " + str(ActualResThreeCGM['f_star']) + " for k = %d" %(ActualResThreeCGM['k']) + " steps"
+    breakLine = "\n"
+    print(test_f + breakLine + test_point + breakLine + accuracy + breakLine + exRes + breakLine + acFourRes + breakLine + acThreeRes + breakLine)
