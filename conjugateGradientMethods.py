@@ -5,9 +5,6 @@ from sympy.utilities.lambdify import lambdify
 
 #sy.init_printing()  # LaTeX like pretty printing for IPython
 
-x1, x2, x3, x4 = symbols('x1 x2 x3 x4')
-x_array = (x1, x2, x3, x4)
-
 def fourStepsCGM(f, x0, eps):
     k = 0
     x_k = x0
@@ -22,6 +19,7 @@ def fourStepsCGM(f, x0, eps):
         2: lambda x_k: -sf.Gradient(f, x_k) + sf.gamma(f, x_k, s_last[1])*s_last[1] + sf.gamma(f, x_k, s_last[0])*s_last[0],
         3: lambda x_k: -sf.Gradient(f, x_k) + sf.gamma(f, x_k, s_last[2])*s_last[2] + sf.gamma(f, x_k, s_last[1])*s_last[1] + sf.gamma(f, x_k, s_last[0])*s_last[0]
     }
+    x_points = [x_k];
 
     while not sf.BreakCriterion(f, x_k, eps):
         s_k = np.array(s.get(k, s.get(3))(x_k)).flatten()
@@ -36,9 +34,10 @@ def fourStepsCGM(f, x0, eps):
         x_k1 = x_k + beta_k*s_k
         x_k = x_k1
         k = k + 1
+        x_points.append(x_k)
         
-    f_star = lambdify(x_array[0:len(x_k)], f, modules='numpy')(*x_k)    
-    return {'x_star': x_k, 'f_star': f_star, 'k': k}   
+    f_star = sf.f_at_point(f, x_k)
+    return {'x_star': x_k, 'f_star': f_star, 'k': k, 'x_points': x_points}   
 
 def threeStepsCGM(f, x0, eps):
     k = 0
@@ -52,6 +51,7 @@ def threeStepsCGM(f, x0, eps):
         1: lambda x_k: -sf.Gradient(f, x_k) + sf.gamma(f, x_k, s_last[0])*s_last[0],
         2: lambda x_k: -sf.Gradient(f, x_k) + sf.gamma(f, x_k, s_last[1])*s_last[1] + sf.gamma(f, x_k, s_last[0])*s_last[0]
     }
+    x_points = [x_k];
     
     while not sf.BreakCriterion(f, x_k, eps):
         s_k = np.array(s.get(k, s.get(2))(x_k)).flatten()
@@ -65,8 +65,9 @@ def threeStepsCGM(f, x0, eps):
         x_k1 = x_k + beta_k*s_k
         x_k = x_k1
         k = k + 1
+        x_points.append(x_k)
 
-    f_star = lambdify(x_array[0:len(x_k)], f, modules='numpy')(*x_k)    
-    return {'x_star': x_k, 'f_star': f_star, 'k': k}    
+    f_star = sf.f_at_point(f, x_k)   
+    return {'x_star': x_k, 'f_star': f_star, 'k': k, 'x_points': x_points}    
     
     

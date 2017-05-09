@@ -1,11 +1,14 @@
 import numpy as np
 import cmath as cm
-from math import sqrt, pow
+#import pylab
+from math import sqrt, pow, log
 from sympy import diff, symbols, Symbol
 from sympy.solvers import solve
 from sympy.utilities.lambdify import lambdify
 from scipy.optimize import minimize
 from scipy.optimize import minimize_scalar
+from matplotlib import mlab
+import matplotlib.pyplot as plt
 
 #sy.init_printing()  # LaTeX like pretty printing for IPython
 
@@ -46,6 +49,9 @@ def findStep(f, x_k, s_k):
     beta_min = minimize_scalar(mod_fn).x
     return 0 if beta_min < 0 else beta_min
 
+def f_at_point(f, point):
+    return lambdify(x_array[0:len(point)], f, modules='numpy')(*point)
+
 def printInfo(f, x0, eps, ExpectedRes, ActualResFourCGM, ActualResThreeCGM):
     test_f = "Test function: " + str(f)
     test_point = "Initial point: " + str(x0)
@@ -55,3 +61,14 @@ def printInfo(f, x0, eps, ExpectedRes, ActualResFourCGM, ActualResThreeCGM):
     acThreeRes = "" if len(ActualResThreeCGM) == 0 else "Actual Result 3 steps CGM: x* = " + str(ActualResThreeCGM['x_star']) + " f* = " + str(ActualResThreeCGM['f_star']) + " for k = %d" %(ActualResThreeCGM['k']) + " steps"
     breakLine = "\n"
     print(test_f + breakLine + test_point + breakLine + accuracy + breakLine + exRes + breakLine + acFourRes + breakLine + acThreeRes + breakLine)
+
+def showPlot(f, x_star, fourStepsRes, threeStepsRes):
+    f_x_star = f_at_point(f, x_star)
+    fourSteps_f_points = [f_at_point(f, x_i) for x_i in fourStepsRes['x_points']]
+    threeSteps_f_points = [f_at_point(f, x_i) for x_i in threeStepsRes['x_points']]
+    log_fourSteps = [log(f_point_k - f_x_star) for f_point_k in fourSteps_f_points]
+    log_threeSteps = [log(f_point_k - f_x_star) for f_point_k in threeSteps_f_points]
+    
+    plt.plot(range(fourStepsRes['k'] + 1), log_fourSteps)
+    plt.plot(range(threeStepsRes['k'] + 1), log_threeSteps)
+    plt.show()

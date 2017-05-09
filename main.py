@@ -1,7 +1,7 @@
 import argparse
 from numpy import set_printoptions
 from testFunctions import f, x0, x_star, f_star
-from secondaryFunctions import printInfo
+from secondaryFunctions import printInfo, showPlot
 from conjugateGradientMethods import fourStepsCGM, threeStepsCGM
 
 set_printoptions(precision=5, suppress=True)
@@ -19,6 +19,8 @@ args = parser.parse_args()
 def main():
     if (args.t):
         for i in range(1, len(f) + 1):
+            message = "Function number: " + str(i)
+            print(message)
             printInfo(f[i], x0[i], args.eps, {'x_star': x_star[i], 'f_star': f_star[i]}, {}, {})
         return    
     
@@ -33,13 +35,14 @@ def main():
             print('Invalid function index i =', i)
             continue
         x_start = args.x0 if args.x0 else x0[i]
-        x_start = [x_start] if type(x_start) == list and type(x_start[1]) == int else x_start
+        x_start = x_start if type(x_start) == list and type(x_start[1]) == list else [x_start]
 
         for x_start_j in x_start:
             fourStepsRes = fourStepsCGM(f[i], x_start_j, args.eps)
             threeStepsRes = threeStepsCGM(f[i], x_start_j, args.eps)
 
             printInfo(f[i], x_start_j, args.eps, {'x_star': x_star[i], 'f_star': f_star[i]}, fourStepsRes, threeStepsRes)
+            showPlot(f[i], x_star[i], fourStepsRes, threeStepsRes)
 
 main()
 

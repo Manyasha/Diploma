@@ -16,6 +16,8 @@ import secondaryFunctions as sf
 x1, x2, x3, x4 = sy.symbols('x1 x2 x3 x4')
 t_k = sy.symbols('t_k')
 
+sf.showPlot([], [],5)
+
 xx = (x1, x2)
 x_array = (x1, x2, x3, x4)
 
