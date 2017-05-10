@@ -7,10 +7,12 @@ from sympy.solvers import solve
 from sympy.utilities.lambdify import lambdify
 from scipy.optimize import minimize
 from scipy.optimize import minimize_scalar
+from decimal import Decimal, getcontext
 from matplotlib import mlab
 import matplotlib.pyplot as plt
 
 #sy.init_printing()  # LaTeX like pretty printing for IPython
+getcontext().prec = 5
 
 x1, x2, x3, x4 = symbols('x1 x2 x3 x4')
 beta = Symbol('beta', real=True, positive=True)
@@ -35,12 +37,13 @@ def norm(x):
     return norm
 
 def BreakCriterion(f, x, eps):
+    print(norm(Gradient(f, x)))
     return norm(Gradient(f, x)) < eps
 
 def gamma(f, x, s):
     numerator = np.matrix(Gradient(f, x))@(Hessian(f, x)*np.matrix(s).T)
     denominator = np.matrix(s)@(Hessian(f, x)*np.matrix(s).T)
-    return numerator / denominator
+    return 0 if denominator == 0 else numerator / denominator 
 
 def findStep(f, x_k, s_k):
     point = x_k + beta*s_k
@@ -50,7 +53,8 @@ def findStep(f, x_k, s_k):
     return 0 if beta_min < 0 else beta_min
 
 def f_at_point(f, point):
-    return lambdify(x_array[0:len(point)], f, modules='numpy')(*point)
+    f_point = lambdify(x_array[0:len(point)], f, modules='numpy')(*point)
+    return round(f_point, 5)
 
 def printInfo(f, x0, eps, ExpectedRes, ActualResFourCGM, ActualResThreeCGM):
     test_f = "Test function: " + str(f)
@@ -63,11 +67,12 @@ def printInfo(f, x0, eps, ExpectedRes, ActualResFourCGM, ActualResThreeCGM):
     print(test_f + breakLine + test_point + breakLine + accuracy + breakLine + exRes + breakLine + acFourRes + breakLine + acThreeRes + breakLine)
 
 def showPlot(f, x_star, fourStepsRes, threeStepsRes):
+    x_star = x_star[1] if type(x_star) == list and type(x_star[1]) == list else x_star
     f_x_star = f_at_point(f, x_star)
     fourSteps_f_points = [f_at_point(f, x_i) for x_i in fourStepsRes['x_points']]
     threeSteps_f_points = [f_at_point(f, x_i) for x_i in threeStepsRes['x_points']]
-    log_fourSteps = [log(f_point_k - f_x_star) for f_point_k in fourSteps_f_points]
-    log_threeSteps = [log(f_point_k - f_x_star) for f_point_k in threeSteps_f_points]
+    log_fourSteps = [Decimal(f_point_k).ln() - f_x_star for f_point_k in fourSteps_f_points]
+    log_threeSteps = [Decimal(f_point_k).ln() - f_x_star for f_point_k in threeSteps_f_points]
     
     plt.plot(range(fourStepsRes['k'] + 1), log_fourSteps)
     plt.plot(range(threeStepsRes['k'] + 1), log_threeSteps)
