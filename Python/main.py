@@ -2,15 +2,15 @@ import argparse
 from numpy import set_printoptions
 from testFunctions import f, x0, x_star, f_star
 from secondaryFunctions import printInfo, showPlot
-from conjugateGradientMethods import fourStepsCGM, threeStepsCGM, nonQvafFourStepsCGM
+from conjugateGradientMethods import fourStepsCGM, threeStepsCGM, nonQvadFourStepsCGM
 
 set_printoptions(precision=5, suppress=True)
 
 parser = argparse.ArgumentParser(description='Modifications of Conjugate Gradient Method')
 
 parser.add_argument('-n', nargs='+', type=int, help='List of numbers of test functions which will be processed')
-parser.add_argument('-x0', nargs=1, type=list, help='Custom init point x0')
-parser.add_argument('-eps', nargs='?', type=float, default='0.0001', help='Accuracy of calculations')
+parser.add_argument('-x0', nargs='+', type=float, help='Custom init point x0')
+parser.add_argument('-eps', nargs='?', type=float, default='0.000001', help='Accuracy of calculations')
 parser.add_argument('-a', action='store_true', help='Process all test functions')
 parser.add_argument('-t', action='store_true', help='Print test data')
 parser.add_argument('-p', action='store_true', help='Show plot')
@@ -43,14 +43,13 @@ def main():
             fourStepsRes = fourStepsCGM(f[i], x_start_j, args.eps)
             threeStepsRes = threeStepsCGM(f[i], x_start_j, args.eps)
 
-            nonQvafFourStepsRes = nonQvafFourStepsCGM(f[i], x_start_j, args.eps)
-
-            printInfo(f[i], x_start_j, args.eps, {'x_star': x_star[i], 'f_star': f_star[i]}, nonQvafFourStepsRes, threeStepsRes)
+            nonQvadFourStepsRes = nonQvadFourStepsCGM(f[i], x_start_j, args.eps)
 
             printInfo(f[i], x_start_j, args.eps, {'x_star': x_star[i], 'f_star': f_star[i]}, fourStepsRes, threeStepsRes)
+            printInfo(f[i], x_start_j, args.eps, {'x_star': x_star[i], 'f_star': f_star[i]}, nonQvadFourStepsRes, threeStepsRes)
             if args.p:
                 showPlot(f[i], fourStepsRes, threeStepsRes)
-                showPlot(f[i], nonQvafFourStepsRes, threeStepsRes)
+                showPlot(f[i], nonQvadFourStepsRes, threeStepsRes)
 
 main()
 

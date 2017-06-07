@@ -1,6 +1,6 @@
 import numpy as np
 import cmath as cm
-from math import sqrt, pow, log10, isinf
+from math import sqrt, pow, log10, isinf, fabs
 from sympy import diff, symbols, Symbol
 from sympy.solvers import solve
 from sympy.utilities.lambdify import lambdify
@@ -34,25 +34,22 @@ def norm(x):
         norm = float('inf')
     return norm
 
-def BreakCriterion(f, x, eps):
-    norm_g = norm(Gradient(f, x))
-    #print(isinf(norm_g), norm_g)
-    return True if isinf(norm_g) else norm_g < eps
+def BreakCriterion(f, x_k, x_k_minus_1, eps):
+    first = f_at_point(f, x_k_minus_1) - f_at_point(f, x_k) < eps*(1 + fabs(f_at_point(f, x_k)))
+    second = norm(np.array(x_k_minus_1) - np.array(x_k)) < sqrt(eps)*(1 + norm(x_k))
+    third = norm(Gradient(f, x_k)) <= pow(eps, 1/3)*(1 + fabs(f_at_point(f, x_k)))
+    return first and second and third
 
 def gamma(f, x, s):
     numerator = np.matrix(Gradient(f, x))@(Hessian(f, x)*np.matrix(s).T)
     denominator = np.matrix(s)@(Hessian(f, x)*np.matrix(s).T)
     return 0 if denominator == 0 else numerator / denominator
 
-def gamma_non_kvad(f, x_k, x_k_minus_one, s):
-    grad = np.matrix(Gradient(f, x_k)) - np.matrix(Gradient(f, x_k_minus_one))
-    if grad > 0:
-        numerator = 0
-        denominator = 0
-    else:
-        numerator = np.matrix(Gradient(f, x_k))@grad
-        denominator = np.matrix(s)@grad
-            
+def gamma_non_kvad(f, x_k, x_k_minus_first, x_k_minus_second):
+    grad = np.matrix(Gradient(f, x_k_minus_first)) - np.matrix(Gradient(f, x_k_minus_second))
+    
+    numerator = np.matrix(Gradient(f, x_k))@grad.T
+    denominator = pow(norm(Gradient(f, x_k_minus_second)),2)            
     return 0 if denominator == 0 else numerator / denominator
 
 def findStep(f, x_k, s_k):
@@ -62,7 +59,7 @@ def findStep(f, x_k, s_k):
     beta_min = minimize_scalar(mod_fn).x
     if beta_min < 0:
         print(beta_min)
-    return beta_min if beta_min < 0 else beta_min #beta_min * (-1)
+    return beta_min
 
 def f_at_point(f, point, isRound = False):
     try:
@@ -92,6 +89,9 @@ def showPlot(f, fourStepsRes, threeStepsRes):
     log_threeSteps = [Decimal(f_point_k - f_x_star_threeSteps).log10() for f_point_k in threeSteps_f_points]
 
     plt.plot(range(fourStepsRes['k'] + 1), log_fourSteps)
-    plt.plot(range(threeStepsRes['k'] + 1), log_threeSteps)
+    plt.plot(range(threeStepsRes['k'] + 1), log_threeSteps, 'r--')
+
+    plt.ylabel('lg [f(x_i) - f(x*)]')
+    plt.xlabel('i')
     
     plt.show()

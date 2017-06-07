@@ -93,7 +93,7 @@ $$\gamma_3^{k-3} = \dfrac{(\phi'(x^k), As^{k-3})}{(s^{k-3}, As^{k-3})} \eqno(2.1
 \end{proof}
 
 \begin{thm} \label{t2}
-	Вектори $\phi'(x^k) \; \text{i} \; \phi'(x^{k+1}) $ ортогональні $ k = 0, 1, \ldots $ 
+	Вектори $\phi'(x^k) \; \text{i} \; \phi'(x^{k+1}) $ ортогональні, $ k = 0, 1, \ldots $ 
 \end{thm}
 \begin{proof}[Доведення:]
 	Відомо, що квадратична функція (2.1.1) досягає мінімального значення при
@@ -167,7 +167,10 @@ $$ \gamma_1^{k-1} = \dfrac{(\phi'(x^k), As^{k-1})}{(s^{k-1}, As^{k-1})} = \dfrac
 $$ = \dfrac{(\phi'(x^k), \phi'(x^k) - \phi'(x^{k-1}))}{(-\phi'(x^{k-1}) - \gamma_2^{k-2}\phi'(x^i) - \ldots,\phi'(x^k) - \phi'(x^{k-1}))} = $$
 $$ = \dfrac{(\phi'(x^k), \phi'(x^k) - \phi'(x^{k-1}))}{\lVert \phi'(x^{k-1}) \rVert^2}  \eqno(2.1.11)$$
 далі отримаємо:
-$$ \gamma_2^{k-2} = \dfrac{(\phi'(x^k), As^{k-2})}{(s^{k-2}, As^{k-2})} =  \dfrac{(\phi'(x^k), \phi'(x^k) - \phi'(x^{k-1}))}{\lVert \phi'(x^{k-2}) \rVert^2} \eqno(2.1.12) $$
-$$ \gamma_3^{k-3} = \dfrac{(\phi'(x^k), As^{k-3})}{(s^{k-3}, As^{k-3})} =  \dfrac{(\phi'(x^k), \phi'(x^k) - \phi'(x^{k-1}))}{\lVert \phi'(x^{k-3}) \rVert^2} \eqno(2.1.13) $$
+$$ \gamma_2^{k-2} = \dfrac{(\phi'(x^k), As^{k-2})}{(s^{k-2}, As^{k-2})} =  \dfrac{(\phi'(x^k), \phi'(x^{k-1}) - \phi'(x^{k-2}))}{\lVert \phi'(x^{k-2}) \rVert^2} \eqno(2.1.12) $$
+$$ \gamma_3^{k-3} = \dfrac{(\phi'(x^k), As^{k-3})}{(s^{k-3}, As^{k-3})} =  \dfrac{(\phi'(x^k), \phi'(x^{k-2}) - \phi'(x^{k-3}))}{\lVert \phi'(x^{k-3}) \rVert^2} \eqno(2.1.13) $$
 
 Отже, для неквадратичних функцій, чотирьохкроковий метод має вигляд (2.0.2), (2.1.11), (2.1.12), (2.1.13)
+
+\section{Тестові задачі}
+

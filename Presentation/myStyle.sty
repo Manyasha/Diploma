@@ -1,0 +1,99 @@
+% Стилевой файл для оформления 
+% курсовых, дипломных работ
+% для математических специальностей
+
+\ProvidesPackage{myStyle}
+
+\usepackage{lmodern}
+% Распознаваемый PDF
+\usepackage{cmap}
+\usepackage{pscyr}
+\renewcommand{\rmdefault}{ftm}%для timesnewroman
+% Кодировка
+\usepackage[T1,T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+
+% Языковые настройки
+\usepackage[english, russian, ukrainian]{babel}
+
+% Микротипографика
+\usepackage{microtype}
+
+% тема оформления
+\usetheme{Singapore}
+
+% цветовая схема
+\usecolortheme{seahorse}
+
+\title{Дослідження чотирьохкрокового методу мінімізації функцій} 
+\subtitle{A fiction story telling the truth}
+\author{domi}
+\publishers{Published by the publisher\\ at a secret location}
+\date{}
+
+% Интервалы
+\usepackage{setspace}
+% альтернативный вариант:
+% \linespread{1.35}
+\renewcommand{\arraystretch}{1.5}
+\setlength{\parskip}{6pt}
+
+% Отступы
+\usepackage{indentfirst}
+\setlength{\parindent}{1.25cm}
+
+% Списки
+\usepackage{enumitem}
+\setlist{noitemsep}
+
+% Таблицы
+\usepackage{booktabs}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{makecell}
+\usepackage{longtable}
+\usepackage{amssymb}
+
+% Формулы
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{bm}
+\usepackage{icomma}
+\usepackage{mathtools}
+ 
+% Вставка изображений
+\usepackage{graphicx}
+\usepackage{float}
+
+% Закладки
+\usepackage{bookmark}
+
+% TikZ
+\usepackage{pgf,tikz}
+% \usetikzlibrary{...} % optional
+
+% Листинги
+%\usepackage{minted}
+%\usemintedstyle{vs} % другие стили: https://help.farbox.com/pygments.html
+
+% Теоремы, определения и т. п.
+\usepackage{amsthm}
+\newtheorem{thm}{Теорема}
+\newtheorem{cons}{Наслідок}
+\newtheorem{prop}{Припущення}
+
+\theoremstyle{definition}
+\newtheorem{defn}{Означення}
+\newtheorem{remark}{Зауваження}
+\newtheorem{algo}{Алгоритм}
+
+% Разное
+
+% прямые апострофы
+%\usepackage{upquote}
+
+% отключение шрифта Sans Serif
+%\renewcommand{\sfdefault}{\rmdefault}
+
+% точка в подписях к рисункам и таблицам
+\usepackage[labelsep=period]{caption}
