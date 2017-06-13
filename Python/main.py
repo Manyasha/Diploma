@@ -2,7 +2,7 @@ import argparse
 from numpy import set_printoptions
 from testFunctions import f, x0, x_star, f_star
 from secondaryFunctions import printInfo, showPlot
-from conjugateGradientMethods import fourStepsCGM, threeStepsCGM, nonQvadFourStepsCGM
+from conjugateGradientMethods import fourStepsCGM, threeStepsCGM, nonQvadFourStepsCGM, nonQvadThreeStepsCGM
 
 set_printoptions(precision=5, suppress=True)
 
@@ -44,12 +44,13 @@ def main():
             threeStepsRes = threeStepsCGM(f[i], x_start_j, args.eps)
 
             nonQvadFourStepsRes = nonQvadFourStepsCGM(f[i], x_start_j, args.eps)
+            nonQvadThreeStepsRes = nonQvadThreeStepsCGM(f[i], x_start_j, args.eps)
 
             printInfo(f[i], x_start_j, args.eps, {'x_star': x_star[i], 'f_star': f_star[i]}, fourStepsRes, threeStepsRes)
-            printInfo(f[i], x_start_j, args.eps, {'x_star': x_star[i], 'f_star': f_star[i]}, nonQvadFourStepsRes, threeStepsRes)
+            printInfo(f[i], x_start_j, args.eps, {'x_star': x_star[i], 'f_star': f_star[i]}, nonQvadFourStepsRes, nonQvadThreeStepsRes)
             if args.p:
                 showPlot(f[i], fourStepsRes, threeStepsRes)
-                showPlot(f[i], nonQvadFourStepsRes, threeStepsRes)
+                showPlot(f[i], nonQvadFourStepsRes, nonQvadThreeStepsRes)
 
 main()
 
