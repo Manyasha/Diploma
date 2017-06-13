@@ -1,7 +1,7 @@
 import numpy as np
 import cmath as cm
 from math import sqrt, pow, log10, isinf, fabs
-from sympy import diff, symbols, Symbol
+from sympy import diff, symbols, Symbol, init_printing, latex
 from sympy.solvers import solve
 from sympy.utilities.lambdify import lambdify
 from scipy.optimize import minimize
@@ -10,7 +10,7 @@ from decimal import Decimal, getcontext
 from matplotlib import mlab
 import matplotlib.pyplot as plt
 
-#sy.init_printing()  # LaTeX like pretty printing for IPython
+init_printing()  # LaTeX like pretty printing for IPython
 getcontext().prec = 15
 
 x1, x2, x3, x4 = symbols('x1 x2 x3 x4')
@@ -41,14 +41,14 @@ def BreakCriterion(f, x_k, x_k_minus_1, eps):
     return first and second and third
 
 def gamma(f, x, s):
-    numerator = np.matrix(Gradient(f, x))@(Hessian(f, x)*np.matrix(s).T)
-    denominator = np.matrix(s)@(Hessian(f, x)*np.matrix(s).T)
+    numerator = np.matrix(Gradient(f, x))*(Hessian(f, x)*np.matrix(s).T)
+    denominator = np.matrix(s)*(Hessian(f, x)*np.matrix(s).T)
     return 0 if denominator == 0 else numerator / denominator
 
 def gamma_non_kvad(f, x_k, x_k_minus_first, x_k_minus_second):
     grad = np.matrix(Gradient(f, x_k_minus_first)) - np.matrix(Gradient(f, x_k_minus_second))
     
-    numerator = np.matrix(Gradient(f, x_k))@grad.T
+    numerator = np.matrix(Gradient(f, x_k))*grad.T
     denominator = pow(norm(Gradient(f, x_k_minus_second)),2)            
     return 0 if denominator == 0 else numerator / denominator
 
@@ -77,6 +77,7 @@ def printInfo(f, x0, eps, ExpectedRes, ActualResFourCGM, ActualResThreeCGM):
     acThreeRes = "" if len(ActualResThreeCGM) == 0 else "Actual Result 3 steps CGM: x* = " + str(ActualResThreeCGM['x_star']) + " f* = " + str(ActualResThreeCGM['f_star']) + " for k = %d" %(ActualResThreeCGM['k']) + " steps"
     breakLine = "\n"
     f_at_init_point = "Function at initial point: " + str(f_at_point(f, x0, True))
+    print(latex(f))
     print(test_f + breakLine + test_point + breakLine + f_at_init_point + breakLine + accuracy + breakLine + exRes + breakLine + acFourRes + breakLine + acThreeRes + breakLine)
 
 def showPlot(f, fourStepsRes, threeStepsRes):
