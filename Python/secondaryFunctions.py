@@ -41,8 +41,8 @@ def BreakCriterion(f, x_k, x_k_minus_1, eps):
     return first and second and third
 
 def gamma(f, x, s):
-    numerator = np.matrix(Gradient(f, x))@(Hessian(f, x)*np.matrix(s).T)
-    denominator = np.matrix(s)@(Hessian(f, x)*np.matrix(s).T)
+    numerator = np.matrix(Gradient(f, x))*(Hessian(f, x)*np.matrix(s).T)
+    denominator = np.matrix(s)*(Hessian(f, x)*np.matrix(s).T)
     return 0 if denominator == 0 else numerator / denominator
 
 def gamma_non_kvad(f, x_k, x_k_minus_first, x_k_minus_second):
@@ -76,11 +76,11 @@ def printInfo(f, x0, eps, ExpectedRes, ActualResFourCGM, ActualResThreeCGM):
     breakLine = "\n"
     f_at_init_point = "Function at initial point: " + str(f_at_point(f, x0, True))
 
-    fourCGMtableRow = "& \multirow{2}{*}{"+str(x0)+"} & \multirow{2}{*}{"+str(f_at_point(f, x0, True))+"} & 4 кроковий & "+str(ActualResFourCGM['x_star'])+" & "+str(ActualResFourCGM['f_star'])+" & %d" %(ActualResFourCGM['k']) + " \\ "		
-    threeCGMtableRow = "\hhline{~~~----} & & & 3 кроковий & "+str(ActualResThreeCGM['x_star'])+" & "+str(ActualResThreeCGM['f_star'])+" & %d" %(ActualResThreeCGM['k']) + " \\ "
-    msg = "Точний розв'язок задачі: " 
+    fourCGMtableRow = "& \multirow{2}{*}{"+str(x0)+"} & \multirow{2}{*}{"+str(f_at_point(f, x0, True))+"} & 4  & "+str(ActualResFourCGM['x_star'])+" & "+str(ActualResFourCGM['f_star'])+" & %d" %(ActualResFourCGM['k'])+"\\"		
+    threeCGMtableRow = "\hhline{~~~----} & & & 3  & "+str(ActualResThreeCGM['x_star'])+" & "+str(ActualResThreeCGM['f_star'])+" & %d" %(ActualResThreeCGM['k']) + " \\ "
+    
     print(latex(f))
-    print(msg)
+    
     print(fourCGMtableRow + breakLine + threeCGMtableRow + breakLine + "\hhline{~------}")
     print(test_f + breakLine + test_point + breakLine + f_at_init_point + breakLine + accuracy + breakLine + exRes + breakLine + acFourRes + breakLine + acThreeRes + breakLine)
 

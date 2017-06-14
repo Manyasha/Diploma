@@ -1,60 +1,64 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.5.29)  31 MAY 2017 03:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2017.6.13)  14 JUN 2017 10:52
 entering extended mode
-**./main.tex
-(main.tex
-LaTeX2e <2017-04-15>
-Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
-(D:\programs\MiKTeX\tex\latex\koma-script\scrreprt.cls
-Document Class: scrreprt 2017/04/13 v3.23 KOMA-Script document class (report)
-(D:\programs\MiKTeX\tex\latex\koma-script\scrkbase.sty
-Package: scrkbase 2017/04/13 v3.23 KOMA-Script package (KOMA-Script-dependent b
-asics and keyval usage)
-
-(D:\programs\MiKTeX\tex\latex\koma-script\scrbase.sty
-Package: scrbase 2017/04/13 v3.23 KOMA-Script package (KOMA-Script-independent 
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**main.py
+(./main.tex
+LaTeX2e <2016/02/01>
+Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrreprt.cls
+Document Class: scrreprt 2015/10/03 v3.19a KOMA-Script document class (report)
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrkbase.sty
+Package: scrkbase 2015/10/03 v3.19a KOMA-Script package (KOMA-Script-dependent 
 basics and keyval usage)
 
-(D:\programs\MiKTeX\tex\latex\graphics\keyval.sty
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrbase.sty
+Package: scrbase 2015/10/03 v3.19a KOMA-Script package (KOMA-Script-independent
+ basics and keyval usage)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-(D:\programs\MiKTeX\tex\latex\koma-script\scrlfile.sty
-Package: scrlfile 2017/04/13 v3.23 KOMA-Script package (loading files)
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrlfile.sty
+Package: scrlfile 2015/10/03 v3.19a KOMA-Script package (loading files)
 
-Package scrlfile, 2017/04/13 v3.23 KOMA-Script package (loading files)
+Package scrlfile, 2015/10/03 v3.19a KOMA-Script package (loading files)
                   Copyright (C) Markus Kohm
 
-))) (D:\programs\MiKTeX\tex\latex\koma-script\tocbasic.sty
-Package: tocbasic 2017/04/13 v3.23 KOMA-Script package (handling toc-files)
-\scr@dte@tocline@numberwidth=\skip41
-\scr@dte@tocline@numbox=\box26
+))) (/usr/share/texlive/texmf-dist/tex/latex/koma-script/tocbasic.sty
+Package: tocbasic 2015/10/03 v3.19a KOMA-Script package (handling toc-files)
 )
 Package tocbasic Info: omitting babel extension for `toc'
 (tocbasic)             because of feature `nobabel' available
-(tocbasic)             for `toc' on input line 133.
+(tocbasic)             for `toc' on input line 125.
 Package tocbasic Info: omitting babel extension for `lof'
 (tocbasic)             because of feature `nobabel' available
-(tocbasic)             for `lof' on input line 135.
+(tocbasic)             for `lof' on input line 126.
 Package tocbasic Info: omitting babel extension for `lot'
 (tocbasic)             because of feature `nobabel' available
-(tocbasic)             for `lot' on input line 136.
-Package tocbasic Info: defining new hook before heading of `' on input line 161
-2.
+(tocbasic)             for `lot' on input line 127.
+Package tocbasic Info: defining new hook before heading of `' on input line 158
+8.
 Class scrreprt Info: File `size14.clo' used to setup font sizes on input line 2
-272.
+248.
 
-(D:\programs\MiKTeX\tex\latex\extsizes\size14.clo
+(/usr/share/texlive/texmf-dist/tex/latex/extsizes/size14.clo
 File: size14.clo 1999/11/11 v1.4a NON-Standard LaTeX file (size option)
 )
-(D:\programs\MiKTeX\tex\latex\koma-script\typearea.sty
-Package: typearea 2017/04/13 v3.23 KOMA-Script package (type area)
-\ta@bcor=\skip42
-\ta@div=\count79
-\ta@hblk=\skip43
-\ta@vblk=\skip44
-\ta@temp=\skip45
-\footheight=\skip46
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/typearea.sty
+Package: typearea 2015/10/03 v3.19a KOMA-Script package (type area)
 
+Package typearea, 2015/10/03 v3.19a KOMA-Script package (type area)
+                  Copyright (C) Frank Neukam, 1992-1994
+                  Copyright (C) Markus Kohm, 1994-
+
+\ta@bcor=\skip41
+\ta@div=\count79
+\ta@hblk=\skip42
+\ta@vblk=\skip43
+\ta@temp=\skip44
+\footheight=\skip45
 
 Package typearea Warning: DIV for 14.0pt and used papersize
 (typearea)                not defined!
@@ -77,7 +81,7 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \topskip        = 14.0pt
 (typearea)              \footskip       = 59.5pt
 (typearea)              \baselineskip   = 17.0pt
-(typearea)              on input line 1647.
+(typearea)              on input line 1509.
 )
 \c@part=\count80
 \c@chapter=\count81
@@ -86,59 +90,71 @@ Package typearea Info: These are the values describing the layout:
 \c@subsubsection=\count84
 \c@paragraph=\count85
 \c@subparagraph=\count86
-\scr@dte@part@maxnumwidth=\skip47
-\scr@dte@chapter@maxnumwidth=\skip48
-\scr@dte@section@maxnumwidth=\skip49
-\scr@dte@subsection@maxnumwidth=\skip50
-\scr@dte@subsubsection@maxnumwidth=\skip51
-\scr@dte@paragraph@maxnumwidth=\skip52
-\scr@dte@subparagraph@maxnumwidth=\skip53
-LaTeX Info: Redefining \textsubscript on input line 4841.
-\abovecaptionskip=\skip54
-\belowcaptionskip=\skip55
-\c@pti@nb@sid@b@x=\box27
+LaTeX Info: Redefining \textsubscript on input line 4652.
+\abovecaptionskip=\skip46
+\belowcaptionskip=\skip47
+\c@pti@nb@sid@b@x=\box26
 \c@figure=\count87
 \c@table=\count88
-Class scrreprt Info: Redefining `\numberline' on input line 5988.
 \bibindent=\dimen102
-) (myStyle.sty
+) (./myStyle.sty
 Package: myStyle 
- (D:\programs\MiKTeX\tex\latex\cmap\cmap.sty
+ (/usr/share/texlive/texmf-dist/tex/latex/cmap/cmap.sty
 Package: cmap 2008/03/06 v1.0h CMap support: searchable PDF
-)
-(D:\programs\MiKTeX\tex\latex\pscyr\pscyr.sty
+
+
+Package cmap Warning: pdftex in DVI mode - exiting.
+
+) (/usr/local/share/texmf/tex/latex/pscyr/pscyr.sty
 Package: pscyr 2002/07/04 v0.4d Cyrillic Type1 fonts as default
 )
-(D:\programs\MiKTeX\tex\latex\base\fontenc.sty
-Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
 
-(D:\programs\MiKTeX\tex\latex\base\t1enc.def
-File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
+! LaTeX Error: File `<.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+Enter file name: 
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.10 \usepackage<c
+                  p1251>{inputenc}</cp1251></T2A>
+? 
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 )
-(D:\programs\MiKTeX\tex\latex\cyrillic\t2aenc.def
+(/usr/share/texlive/texmf-dist/tex/latex/cyrillic/t2aenc.def
 File: t2aenc.def 2005/09/27 v1.0i Cyrillic encoding definition file
 )
 LaTeX Font Info:    Try loading font information for T2A+cmr on input line 105.
 
 
-(D:\programs\MiKTeX\tex\latex\cyrillic\t2acmr.fd
+(/usr/share/texlive/texmf-dist/tex/latex/cyrillic/t2acmr.fd
 File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
-)<<t2a.cmap>>)
-(D:\programs\MiKTeX\tex\latex\base\inputenc.sty
+))
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2015/03/17 v1.2c Input encoding file
 \inpenc@prehook=\toks15
 \inpenc@posthook=\toks16
 
-(D:\programs\MiKTeX\tex\latex\base\utf8.def
-File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+(/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2015/12/03 v1.1r UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
 
-(D:\programs\MiKTeX\tex\latex\base\t1enc.dfu
-File: t1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.dfu
+File: t1enc.dfu 2015/12/03 v1.1r UTF-8 support for inputenc
    defining Unicode char U+00A0 (decimal 160)
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -350,17 +366,11 @@ File: t1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+0219 (decimal 537)
    defining Unicode char U+021A (decimal 538)
    defining Unicode char U+021B (decimal 539)
-   defining Unicode char U+0232 (decimal 562)
-   defining Unicode char U+0233 (decimal 563)
-   defining Unicode char U+1E02 (decimal 7682)
-   defining Unicode char U+1E03 (decimal 7683)
+   defining Unicode char U+01E02 (decimal 7682)
+   defining Unicode char U+01E03 (decimal 7683)
    defining Unicode char U+200C (decimal 8204)
-   defining Unicode char U+2010 (decimal 8208)
-   defining Unicode char U+2011 (decimal 8209)
-   defining Unicode char U+2012 (decimal 8210)
    defining Unicode char U+2013 (decimal 8211)
    defining Unicode char U+2014 (decimal 8212)
-   defining Unicode char U+2015 (decimal 8213)
    defining Unicode char U+2018 (decimal 8216)
    defining Unicode char U+2019 (decimal 8217)
    defining Unicode char U+201A (decimal 8218)
@@ -372,14 +382,12 @@ File: t1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+2039 (decimal 8249)
    defining Unicode char U+203A (decimal 8250)
    defining Unicode char U+2423 (decimal 9251)
-   defining Unicode char U+1E20 (decimal 7712)
-   defining Unicode char U+1E21 (decimal 7713)
 )
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
 
-(D:\programs\MiKTeX\tex\latex\base\ot1enc.dfu
-File: ot1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+(/usr/share/texlive/texmf-dist/tex/latex/base/ot1enc.dfu
+File: ot1enc.dfu 2015/12/03 v1.1r UTF-8 support for inputenc
    defining Unicode char U+00A0 (decimal 160)
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -419,8 +427,8 @@ File: ot1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
 Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
 
-(D:\programs\MiKTeX\tex\latex\base\omsenc.dfu
-File: omsenc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+(/usr/share/texlive/texmf-dist/tex/latex/base/omsenc.dfu
+File: omsenc.dfu 2015/12/03 v1.1r UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
    defining Unicode char U+00B7 (decimal 183)
@@ -435,8 +443,8 @@ Now handling font encoding U ...
 Now handling font encoding T2A ...
 ... processing UTF-8 mapping file for font encoding T2A
 
-(D:\programs\MiKTeX\tex\latex\base\t2aenc.dfu
-File: t2aenc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+(/usr/share/texlive/texmf-dist/tex/latex/base/t2aenc.dfu
+File: t2aenc.dfu 2015/12/03 v1.1r UTF-8 support for inputenc
    defining Unicode char U+00A4 (decimal 164)
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00AB (decimal 171)
@@ -635,21 +643,14 @@ File: t2aenc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
 ))
-(D:\programs\MiKTeX\tex\generic\babel\babel.sty
-Package: babel 2016/04/23 3.9r The Babel package
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2016/02/24 3.9q The Babel package
 
-*************************************
-* Local config file bblopts.cfg used
-*
-(D:\programs\MiKTeX\tex\latex\arabi\bblopts.cfg
-File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
- babel
-)
-(D:\programs\MiKTeX\tex\latex\babel-english\english.ldf
-Language: english 2017/01/24 v3.3q English support from the babel system
+(/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2012/08/20 v3.3p English support from the babel system
 
-(D:\programs\MiKTeX\tex\generic\babel\babel.def
-File: babel.def 2016/04/23 3.9r Babel common definitions
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2016/02/24 3.9q Babel common definitions
 \babel@savecnt=\count89
 \U@D=\dimen103
 )
@@ -657,46 +658,47 @@ File: babel.def 2016/04/23 3.9r Babel common definitions
 \l@australian = a dialect from \language\l@british 
 \l@newzealand = a dialect from \language\l@british 
 )
-(D:\programs\MiKTeX\tex\latex\babel-russian\russianb.ldf
-Language: russianb 2017/01/12 1.3i Russian support for the Babel system
+(/usr/share/texlive/texmf-dist/tex/generic/babel-russian/russianb.ldf
+Language: russianb 2016/02/18 1.3h Russian support for the Babel system
 Package babel Info: Making " an active character on input line 111.
 )
-(D:\programs\MiKTeX\tex\latex\babel-ukrainian\ukraineb.ldf
+(/usr/share/texlive/texmf-dist/tex/generic/babel-ukraineb/ukraineb.ldf
 Language: ukraineb 2008/03/21 v1.1l Ukrainian support from the babel system
 LaTeX Info: Redefining \textcyrillic on input line 138.
 ))
-(D:\programs\MiKTeX\tex\latex\microtype\microtype.sty
-Package: microtype 2016/05/14 v2.6a Micro-typographical refinements (RS)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.sty
+Package: microtype 2013/05/23 v2.5a Micro-typographical refinements (RS)
 \MT@toks=\toks17
 \MT@count=\count90
-LaTeX Info: Redefining \textls on input line 774.
+LaTeX Info: Redefining \textls on input line 766.
 \MT@outer@kern=\dimen104
-LaTeX Info: Redefining \textmicrotypecontext on input line 1310.
+LaTeX Info: Redefining \textmicrotypecontext on input line 1285.
 \MT@listname@count=\count91
 
-(D:\programs\MiKTeX\tex\latex\microtype\microtype-pdftex.def
-File: microtype-pdftex.def 2016/05/14 v2.6a Definitions specific to pdftex (RS)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype-pdftex.def
+File: microtype-pdftex.def 2013/05/23 v2.5a Definitions specific to pdftex (RS)
 
-LaTeX Info: Redefining \lsstyle on input line 916.
-LaTeX Info: Redefining \lslig on input line 916.
-\MT@outer@space=\skip56
+LaTeX Info: Redefining \lsstyle on input line 915.
+LaTeX Info: Redefining \lslig on input line 915.
+\MT@outer@space=\skip48
 )
 Package microtype Info: Loading configuration file microtype.cfg.
 
-(D:\programs\MiKTeX\tex\latex\microtype\microtype.cfg
-File: microtype.cfg 2016/05/14 v2.6a microtype main configuration file (RS)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.cfg
+File: microtype.cfg 2013/05/23 v2.5a microtype main configuration file (RS)
 ))
-(D:\programs\MiKTeX\tex\latex\geometry\geometry.sty
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
-(D:\programs\MiKTeX\tex\generic\oberdiek\ifpdf.sty
-Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is not detected.
 )
-(D:\programs\MiKTeX\tex\generic\oberdiek\ifvtex.sty
-Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
-(D:\programs\MiKTeX\tex\generic\ifxetex\ifxetex.sty
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 \Gm@cnth=\count92
@@ -711,23 +713,22 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layouthoffset=\dimen111
 \Gm@layoutvoffset=\dimen112
 \Gm@dimlist=\toks18
-
-(D:\programs\MiKTeX\tex\latex\geometry\geometry.cfg))
-(D:\programs\MiKTeX\tex\latex\setspace\setspace.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
-(D:\programs\MiKTeX\tex\latex\tools\indentfirst.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tools/indentfirst.sty
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
 )
-(D:\programs\MiKTeX\tex\latex\enumitem\enumitem.sty
+(/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2011/09/28 v3.5.2 Customized lists
-\labelindent=\skip57
+\labelindent=\skip49
 \enit@outerparindent=\dimen113
 \enit@toks=\toks19
-\enit@inbox=\box28
+\enit@inbox=\box27
 \enitdp@description=\count95
 )
-(D:\programs\MiKTeX\tex\latex\booktabs\booktabs.sty
+(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \heavyrulewidth=\dimen114
 \lightrulewidth=\dimen115
@@ -747,10 +748,10 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \@lastruleclass=\count99
 \@thisrulewidth=\dimen126
 )
-(D:\programs\MiKTeX\tex\latex\tools\multicol.sty
-Package: multicol 2017/04/11 v1.8q multicolumn formatting (FMi)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2015/08/19 v1.8n multicolumn formatting (FMi)
 \c@tracingmulticols=\count100
-\mult@box=\box29
+\mult@box=\box28
 \multicol@leftmargin=\dimen127
 \c@unbalance=\count101
 \c@collectmore=\count102
@@ -761,15 +762,16 @@ Package: multicol 2017/04/11 v1.8q multicolumn formatting (FMi)
 \page@free=\dimen129
 \premulticols=\dimen130
 \postmulticols=\dimen131
-\multicolsep=\skip58
-\multicolbaselineskip=\skip59
-\partial@page=\box30
-\last@line=\box31
+\multicolsep=\skip50
+\multicolbaselineskip=\skip51
+\partial@page=\box29
+\last@line=\box30
 \maxbalancingoverflow=\dimen132
-\mult@rightbox=\box32
-\mult@grightbox=\box33
-\mult@gfirstbox=\box34
-\mult@firstbox=\box35
+\mult@rightbox=\box31
+\mult@grightbox=\box32
+\mult@gfirstbox=\box33
+\mult@firstbox=\box34
+\@tempa=\box35
 \@tempa=\box36
 \@tempa=\box37
 \@tempa=\box38
@@ -786,46 +788,76 @@ Package: multicol 2017/04/11 v1.8q multicolumn formatting (FMi)
 \@tempa=\box49
 \@tempa=\box50
 \@tempa=\box51
-\@tempa=\box52
 \c@columnbadness=\count106
 \c@finalcolumnbadness=\count107
 \last@try=\dimen133
 \multicolovershoot=\dimen134
 \multicolundershoot=\dimen135
-\mult@nat@firstbox=\box53
-\colbreak@box=\box54
+\mult@nat@firstbox=\box52
+\colbreak@box=\box53
 \mc@col@check@num=\count108
 )
-(D:\programs\MiKTeX\tex\latex\multirow\multirow.sty
-Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
-\multirow@colwidth=\skip60
-\multirow@cntb=\count109
-\multirow@dima=\skip61
+(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
 \bigstrutjot=\dimen136
 )
-(D:\programs\MiKTeX\tex\latex\makecell\makecell.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tools/hhline.sty
+Package: hhline 2014/10/28 v2.03 Table rule package (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/rotating/rotating.sty
+Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2016/01/03 v1.0q Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: dvips.def on input line 95.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/dvips.def
+File: dvips.def 2015/12/30 v3.0k Driver-dependent file (DPC,SPQR)
+))
+\Gin@req@height=\dimen137
+\Gin@req@width=\dimen138
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\c@r@tfl@t=\count109
+\rotFPtop=\skip52
+\rotFPbot=\skip53
+\rot@float@box=\box54
+\rot@mess@toks=\toks20
+)
+(/usr/share/texlive/texmf-dist/tex/latex/makecell/makecell.sty
 Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
 
-(D:\programs\MiKTeX\tex\latex\tools\array.sty
-Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
-\col@sep=\dimen137
-\extrarowheight=\dimen138
-\NC@list=\toks20
-\extratabsurround=\skip62
-\backup@length=\skip63
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen139
+\extrarowheight=\dimen140
+\NC@list=\toks21
+\extratabsurround=\skip54
+\backup@length=\skip55
 )
-\rotheadsize=\dimen139
+\rotheadsize=\dimen141
 \c@nlinenum=\count110
-\TeXr@lab=\toks21
+\TeXr@lab=\toks22
 )
-(D:\programs\MiKTeX\tex\latex\tools\longtable.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
 Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
-\LTleft=\skip64
-\LTright=\skip65
-\LTpre=\skip66
-\LTpost=\skip67
+\LTleft=\skip56
+\LTright=\skip57
+\LTpre=\skip58
+\LTpost=\skip59
 \LTchunksize=\count111
-\LTcapwidth=\dimen140
+\LTcapwidth=\dimen142
 \LT@head=\box55
 \LT@firsthead=\box56
 \LT@foot=\box57
@@ -834,107 +866,107 @@ Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
 \LT@rows=\count113
 \c@LT@tables=\count114
 \c@LT@chunks=\count115
-\LT@p@ftn=\toks22
+\LT@p@ftn=\toks23
 )
-Class scrreprt Info: longtable captions redefined on input line 51.
+Class scrreprt Info: longtable captions redefined on input line 54.
 
-(D:\programs\MiKTeX\tex\latex\amsfonts\amssymb.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-(D:\programs\MiKTeX\tex\latex\amsfonts\amsfonts.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
-\@emptytoks=\toks23
+\@emptytoks=\toks24
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-(D:\programs\MiKTeX\tex\latex\amsmath\amsmath.sty
-Package: amsmath 2016/11/05 v2.16a AMS math features
-\@mathmargin=\skip68
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2016/03/03 v2.15a AMS math features
+\@mathmargin=\skip60
 
 For additional information on amsmath, use the `?' option.
-(D:\programs\MiKTeX\tex\latex\amsmath\amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
 
-(D:\programs\MiKTeX\tex\latex\amsmath\amsgen.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks24
-\ex@=\dimen141
+\@emptytoks=\toks25
+\ex@=\dimen143
 ))
-(D:\programs\MiKTeX\tex\latex\amsmath\amsbsy.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen142
+\pmbraise@=\dimen144
 )
-(D:\programs\MiKTeX\tex\latex\amsmath\amsopn.sty
-Package: amsopn 2016/03/08 v2.02 operator names
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count116
-LaTeX Info: Redefining \frac on input line 213.
+LaTeX Info: Redefining \frac on input line 199.
 \uproot@=\count117
 \leftroot@=\count118
-LaTeX Info: Redefining \overline on input line 375.
+LaTeX Info: Redefining \overline on input line 297.
 \classnum@=\count119
 \DOTSCASE@=\count120
-LaTeX Info: Redefining \ldots on input line 472.
-LaTeX Info: Redefining \dots on input line 475.
-LaTeX Info: Redefining \cdots on input line 596.
+LaTeX Info: Redefining \ldots on input line 394.
+LaTeX Info: Redefining \dots on input line 397.
+LaTeX Info: Redefining \cdots on input line 518.
 \Mathstrutbox@=\box59
 \strutbox@=\box60
-\big@size=\dimen143
-LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+\big@size=\dimen145
+LaTeX Font Info:    Redeclaring font encoding OML on input line 630.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 631.
 \macc@depth=\count121
 \c@MaxMatrixCols=\count122
 \dotsspace@=\muskip10
 \c@parentequation=\count123
 \dspbrk@lvl=\count124
-\tag@help=\toks25
+\tag@help=\toks26
 \row@=\count125
 \column@=\count126
 \maxfields@=\count127
-\andhelp@=\toks26
-\eqnshift@=\dimen144
-\alignsep@=\dimen145
-\tagshift@=\dimen146
-\tagwidth@=\dimen147
-\totwidth@=\dimen148
-\lineht@=\dimen149
-\@envbody=\toks27
-\multlinegap=\skip69
-\multlinetaggap=\skip70
-\mathdisplay@stack=\toks28
-LaTeX Info: Redefining \[ on input line 2817.
-LaTeX Info: Redefining \] on input line 2818.
+\andhelp@=\toks27
+\eqnshift@=\dimen146
+\alignsep@=\dimen147
+\tagshift@=\dimen148
+\tagwidth@=\dimen149
+\totwidth@=\dimen150
+\lineht@=\dimen151
+\@envbody=\toks28
+\multlinegap=\skip61
+\multlinetaggap=\skip62
+\mathdisplay@stack=\toks29
+LaTeX Info: Redefining \[ on input line 2735.
+LaTeX Info: Redefining \] on input line 2736.
 )
-(D:\programs\MiKTeX\tex\latex\tools\bm.sty
-Package: bm 2017/01/16 v1.2c Bold Symbol Support (DPC/FMi)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty
+Package: bm 2014/10/28 v1.1c Bold Symbol Support (DPC/FMi)
 \symboldoperators=\mathgroup6
 \symboldletters=\mathgroup7
 \symboldsymbols=\mathgroup8
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
 LaTeX Info: Redefining \bm on input line 207.
 )
-(D:\programs\MiKTeX\tex\latex\was\icomma.sty
+(/usr/share/texlive/texmf-dist/tex/latex/was/icomma.sty
 Package: icomma 2002/03/10 v2.0 (WaS)
 )
-(D:\programs\MiKTeX\tex\latex\mathtools\mathtools.sty
+(/usr/share/texlive/texmf-dist/tex/latex/mathtools/mathtools.sty
 Package: mathtools 2015/11/12 v1.18 mathematical typesetting tools
 
-(D:\programs\MiKTeX\tex\latex\tools\calc.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count128
 \calc@Bcount=\count129
-\calc@Adimen=\dimen150
-\calc@Bdimen=\dimen151
-\calc@Askip=\skip71
-\calc@Bskip=\skip72
+\calc@Adimen=\dimen152
+\calc@Bdimen=\dimen153
+\calc@Askip=\skip63
+\calc@Bskip=\skip64
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Ccount=\count130
-\calc@Cskip=\skip73
+\calc@Cskip=\skip65
 )
-(D:\programs\MiKTeX\tex\latex\mathtools\mhsetup.sty
+(/usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty
 Package: mhsetup 2010/01/21 v1.2a programming setup (MH)
 )
 LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
@@ -942,14 +974,14 @@ LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
 \g_MT_multlinerow_int=\count131
-\l_MT_multwidth_dim=\dimen152
-\origjot=\skip74
-\l_MT_shortvdotswithinadjustabove_dim=\dimen153
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen154
-\l_MT_above_intertext_sep=\dimen155
-\l_MT_below_intertext_sep=\dimen156
-\l_MT_above_shortintertext_sep=\dimen157
-\l_MT_below_shortintertext_sep=\dimen158
+\l_MT_multwidth_dim=\dimen154
+\origjot=\skip66
+\l_MT_shortvdotswithinadjustabove_dim=\dimen155
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen156
+\l_MT_above_intertext_sep=\dimen157
+\l_MT_below_intertext_sep=\dimen158
+\l_MT_above_shortintertext_sep=\dimen159
+\l_MT_below_shortintertext_sep=\dimen160
 )
 
 Class scrreprt Warning: Usage of package `titlesec' together
@@ -960,19 +992,19 @@ Class scrreprt Warning: Usage of package `titlesec' together
 (scrreprt)              the extended optional argument of the section
 (scrreprt)              commands.
 (scrreprt)              Nevertheless, using requested
-(scrreprt)              package `titlesec' on input line 62.
+(scrreprt)              package `titlesec' on input line 65.
 
-(D:\programs\MiKTeX\tex\latex\titlesec\titlesec.sty
-Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
+(/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2016/03/15 v2.10.1 Sectioning titles
 \ttl@box=\box61
-\beforetitleunit=\skip75
-\aftertitleunit=\skip76
-\ttl@plus=\dimen159
-\ttl@minus=\dimen160
-\ttl@toksa=\toks29
-\titlewidth=\dimen161
-\titlewidthlast=\dimen162
-\titlewidthfirst=\dimen163
+\beforetitleunit=\skip67
+\aftertitleunit=\skip68
+\ttl@plus=\dimen161
+\ttl@minus=\dimen162
+\ttl@toksa=\toks30
+\titlewidth=\dimen163
+\titlewidthlast=\dimen164
+\titlewidthfirst=\dimen165
 
 
 Package titlesec Warning: Non standard sectioning command detected
@@ -995,198 +1027,175 @@ Package titlesec Warning: Non standard sectioning command detected
 (titlesec)                Using default spacing and no format.
 
 )
-
-Class scrreprt Warning: Activating an ugly workaround for a missing
-(scrreprt)              feature of package `titlesec` on input line 62.
-
-(D:\programs\MiKTeX\tex\latex\graphics\graphicx.sty
-Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
-
-(D:\programs\MiKTeX\tex\latex\graphics\graphics.sty
-Package: graphics 2017/04/14 v1.1b Standard LaTeX Graphics (DPC,SPQR)
-
-(D:\programs\MiKTeX\tex\latex\graphics\trig.sty
-Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
-)
-(D:\programs\MiKTeX\tex\latex\graphics-cfg\graphics.cfg
-File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
-)
-Package graphics Info: Driver file: pdftex.def on input line 99.
-
-(D:\programs\MiKTeX\tex\latex\graphics-def\pdftex.def
-File: pdftex.def 2017/01/12 v0.06k Graphics/color for pdfTeX
-
-(D:\programs\MiKTeX\tex\generic\oberdiek\infwarerr.sty
-Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
-)
-(D:\programs\MiKTeX\tex\generic\oberdiek\ltxcmds.sty
-Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
-)
-\Gread@gobject=\count132
-))
-\Gin@req@height=\dimen164
-\Gin@req@width=\dimen165
-)
-(D:\programs\MiKTeX\tex\latex\float\float.sty
+Class scrreprt Info: Deactivating the `titlesec` workaround,
+(scrreprt)           because package is newer than expected on input line 65.
+ (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count133
-\float@exts=\toks30
+\c@float@type=\count132
+\float@exts=\toks31
 \float@box=\box62
-\@float@everytoks=\toks31
+\@float@everytoks=\toks32
 \@floatcapt=\box63
 )
-(D:\programs\MiKTeX\tex\latex\xcolor\xcolor.sty
-Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 
-(D:\programs\MiKTeX\tex\latex\graphics-cfg\color.cfg
-File: color.cfg 2016/01/02 v1.6 sample color configuration
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
-Package xcolor Info: Driver file: pdftex.def on input line 225.
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
-Package xcolor Info: Model `RGB' extended on input line 1364.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+Package xcolor Info: Driver file: dvips.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 
-(D:\programs\MiKTeX\tex\latex\graphics\dvipsnam.def
-File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 2015/12/30 v3.0k Driver-dependent file (DPC,SPQR)
 )
-(D:\programs\MiKTeX\tex\latex\xcolor\svgnam.def
-File: svgnam.def 2016/05/11 v2.12 Predefined colors according to SVG 1.1 (UK)
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/svgnam.def
+File: svgnam.def 2007/01/21 v2.11 Predefined colors according to SVG 1.1 (UK)
 )
-(D:\programs\MiKTeX\tex\latex\xcolor\x11nam.def
-File: x11nam.def 2016/05/11 v2.12 Predefined colors according to Unix/X11 (UK)
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/x11nam.def
+File: x11nam.def 2007/01/21 v2.11 Predefined colors according to Unix/X11 (UK)
 ))
-(D:\programs\MiKTeX\tex\latex\hyperref\hyperref.sty
-Package: hyperref 2017/03/14 v6.85a Hypertext links for LaTeX
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
 
-(D:\programs\MiKTeX\tex\generic\oberdiek\hobsub-hyperref.sty
-Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
 
 
-(D:\programs\MiKTeX\tex\generic\oberdiek\hobsub-generic.sty
-Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
-Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
-Package hobsub Info: Skipping package `infwarerr' (already loaded).
-Package hobsub Info: Skipping package `ltxcmds' (already loaded).
-Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 Package hobsub Info: Skipping package `ifvtex' (already loaded).
-Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
+Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
 Package hobsub Info: Skipping package `ifpdf' (already loaded).
-Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
 Package etexcmds Info: Could not find \expanded.
 (etexcmds)             That can mean that you are not using pdfTeX 1.50 or
 (etexcmds)             that some package has redefined \expanded.
 (etexcmds)             In the latter case, load this package earlier.
-Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
-Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
-Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
-Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
+Package pdftexcmds Info: \pdfdraftmode is ignored in DVI mode.
+Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
 )
-Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
-Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
+Package: bitset 2011/01/30 v1.1 Handle bit-vector datatype (HO)
+Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
 )
 Package hobsub Info: Skipping package `hobsub' (already loaded).
-Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
-Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
-Package: xcolor-patch 2016/05/16 xcolor patch
-Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
+Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
+Package: hopatch 2012/05/28 v1.2 Wrapper for package hooks (HO)
+Package: xcolor-patch 2011/01/30 xcolor patch
+Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
 Package atveryend Info: \enddocument detected (standard20110627).
-Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
-Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
-Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
+Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
 )
-(D:\programs\MiKTeX\tex\latex\oberdiek\auxhook.sty
-Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 )
-(D:\programs\MiKTeX\tex\latex\oberdiek\kvoptions.sty
-Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
 \@linkdim=\dimen166
-\Hy@linkcounter=\count134
-\Hy@pagecounter=\count135
+\Hy@linkcounter=\count133
+\Hy@pagecounter=\count134
 
-(D:\programs\MiKTeX\tex\latex\hyperref\pd1enc.def
-File: pd1enc.def 2017/03/14 v6.85a Hyperref: PDFDocEncoding definition (HO)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count136
-Package hyperref Info: Option `unicode' set `true' on input line 3453.
+\Hy@SavedSpaceFactor=\count135
+Package hyperref Info: Option `unicode' set `true' on input line 3411.
 
-(D:\programs\MiKTeX\tex\latex\hyperref\puenc.def
-File: puenc.def 2017/03/14 v6.85a Hyperref: PDF Unicode definition (HO)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2012/11/06 v6.83m Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
-(D:\programs\MiKTeX\tex\latex\00miktex\hyperref.cfg
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
-Package hyperref Info: Option `unicode' set `true' on input line 4374.
-Package hyperref Info: Option `colorlinks' set `true' on input line 4374.
-Package hyperref Info: Option `bookmarks' set `true' on input line 4374.
-Package hyperref Info: Hyper figures OFF on input line 4498.
-Package hyperref Info: Link nesting OFF on input line 4503.
-Package hyperref Info: Hyper index ON on input line 4506.
-Package hyperref Info: Plain pages OFF on input line 4513.
-Package hyperref Info: Backreferencing OFF on input line 4518.
+Package hyperref Info: Option `unicode' set `true' on input line 4319.
+Package hyperref Info: Option `colorlinks' set `true' on input line 4319.
+Package hyperref Info: Option `bookmarks' set `true' on input line 4319.
+Package hyperref Info: Hyper figures OFF on input line 4443.
+Package hyperref Info: Link nesting OFF on input line 4448.
+Package hyperref Info: Hyper index ON on input line 4451.
+Package hyperref Info: Plain pages OFF on input line 4458.
+Package hyperref Info: Backreferencing OFF on input line 4463.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4751.
-\c@Hy@tempcnt=\count137
+Package hyperref Info: Bookmarks ON on input line 4688.
+\c@Hy@tempcnt=\count136
 
-(D:\programs\MiKTeX\tex\latex\url\url.sty
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 5104.
+LaTeX Info: Redefining \url on input line 5041.
 \XeTeXLinkMargin=\dimen167
-\Fld@menulength=\count138
+\Fld@menulength=\count137
 \Field@Width=\dimen168
 \Fld@charsize=\dimen169
-Package hyperref Info: Hyper figures OFF on input line 6358.
-Package hyperref Info: Link nesting OFF on input line 6363.
-Package hyperref Info: Hyper index ON on input line 6366.
-Package hyperref Info: backreferencing OFF on input line 6373.
-Package hyperref Info: Link coloring ON on input line 6376.
-Package hyperref Info: Link coloring with OCG OFF on input line 6383.
-Package hyperref Info: PDF/A mode OFF on input line 6388.
-LaTeX Info: Redefining \ref on input line 6428.
-LaTeX Info: Redefining \pageref on input line 6432.
-\Hy@abspage=\count139
-\c@Item=\count140
-\c@Hfootnote=\count141
+Package hyperref Info: Hyper figures OFF on input line 6295.
+Package hyperref Info: Link nesting OFF on input line 6300.
+Package hyperref Info: Hyper index ON on input line 6303.
+Package hyperref Info: backreferencing OFF on input line 6310.
+Package hyperref Info: Link coloring ON on input line 6313.
+Package hyperref Info: Link coloring with OCG OFF on input line 6320.
+Package hyperref Info: PDF/A mode OFF on input line 6325.
+LaTeX Info: Redefining \ref on input line 6365.
+LaTeX Info: Redefining \pageref on input line 6369.
+\Hy@abspage=\count138
+\c@Item=\count139
+\c@Hfootnote=\count140
 )
 
-Package hyperref Message: Driver (autodetected): hpdftex.
+Package hyperref Message: Driver (default): hdvips.
 
-(D:\programs\MiKTeX\tex\latex\hyperref\hpdftex.def
-File: hpdftex.def 2017/03/14 v6.85a Hyperref driver for pdfTeX
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hdvips.def
+File: hdvips.def 2012/11/06 v6.83m Hyperref driver for dvips
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pdfmark.def
+File: pdfmark.def 2012/11/06 v6.83m Hyperref definitions for pdfmark specials
+\pdf@docset=\toks33
+\pdf@box=\box64
+\pdf@toks=\toks34
+\pdf@defaulttoks=\toks35
+\HyField@AnnotCount=\count141
 \Fld@listcount=\count142
 \c@bookmark@seq@number=\count143
 
-(D:\programs\MiKTeX\tex\latex\oberdiek\rerunfilecheck.sty
-Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
-\Hy@SectionHShift=\skip77
-)
-(D:\programs\MiKTeX\tex\latex\oberdiek\bookmark.sty
-Package: bookmark 2016/05/17 v1.26 PDF bookmarks (HO)
+\Hy@SectionHShift=\skip69
+))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/bookmark.sty
+Package: bookmark 2011/12/02 v1.24 PDF bookmarks (HO)
 
-(D:\programs\MiKTeX\tex\latex\oberdiek\bkm-pdftex.def
-File: bkm-pdftex.def 2016/05/17 v1.26 bookmark driver for pdfTeX (HO)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/bkm-dvips.def
+File: bkm-dvips.def 2011/12/02 v1.24 bookmark driver for dvips (HO)
 \BKM@id=\count144
 ))
 
@@ -1195,50 +1204,49 @@ Class scrreprt Warning: Usage of package `fancyhdr' together
 (scrreprt)              I'd suggest to use 
 (scrreprt)              package `scrlayer-scrpage'.
 (scrreprt)              Nevertheless, using requested
-(scrreprt)              package `fancyhdr' on input line 105.
+(scrreprt)              package `fancyhdr' on input line 108.
 
-(D:\programs\MiKTeX\tex\latex\fancyhdr\fancyhdr.sty
-Package: fancyhdr 2016/09/06 3.8 Extensive control of page headers and footers
-\fancy@headwidth=\skip78
-\f@ncyO@elh=\skip79
-\f@ncyO@erh=\skip80
-\f@ncyO@olh=\skip81
-\f@ncyO@orh=\skip82
-\f@ncyO@elf=\skip83
-\f@ncyO@erf=\skip84
-\f@ncyO@olf=\skip85
-\f@ncyO@orf=\skip86
+(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+\fancy@headwidth=\skip70
+\f@ncyO@elh=\skip71
+\f@ncyO@erh=\skip72
+\f@ncyO@olh=\skip73
+\f@ncyO@orh=\skip74
+\f@ncyO@elf=\skip75
+\f@ncyO@erf=\skip76
+\f@ncyO@olf=\skip77
+\f@ncyO@orf=\skip78
 )
-(D:\programs\MiKTeX\tex\latex\pgf\basiclayer\pgf.sty
-(D:\programs\MiKTeX\tex\latex\pgf\utilities\pgfrcs.sty
-(D:\programs\MiKTeX\tex\generic\pgf\utilities\pgfutil-common.tex
-\pgfutil@everybye=\toks32
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks36
 \pgfutil@tempdima=\dimen170
 \pgfutil@tempdimb=\dimen171
 
-(D:\programs\MiKTeX\tex\generic\pgf\utilities\pgfutil-common-lists.tex))
-(D:\programs\MiKTeX\tex\generic\pgf\utilities\pgfutil-latex.def
-\pgfutil@abb=\box64
-
-(D:\programs\MiKTeX\tex\latex\ms\everyshi.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.t
+ex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box65
+(/usr/share/texlive/texmf-dist/tex/latex/ms/everyshi.sty
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 ))
-(D:\programs\MiKTeX\tex\generic\pgf\utilities\pgfrcs.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
 Package: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
 ))
 Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
 
-(D:\programs\MiKTeX\tex\latex\pgf\basiclayer\pgfcore.sty
-(D:\programs\MiKTeX\tex\latex\pgf\systemlayer\pgfsys.sty
-(D:\programs\MiKTeX\tex\generic\pgf\systemlayer\pgfsys.code.tex
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
 Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
 
-(D:\programs\MiKTeX\tex\generic\pgf\utilities\pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks33
-\pgfkeys@temptoks=\toks34
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks37
+\pgfkeys@temptoks=\toks38
 
-(D:\programs\MiKTeX\tex\generic\pgf\utilities\pgfkeysfiltered.code.tex
-\pgfkeys@tmptoks=\toks35
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.t
+ex
+\pgfkeys@tmptoks=\toks39
 ))
 \pgf@x=\dimen172
 \pgf@y=\dimen173
@@ -1254,56 +1262,68 @@ Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
 \c@pgf@countb=\count146
 \c@pgf@countc=\count147
 \c@pgf@countd=\count148
-\t@pgf@toka=\toks36
-\t@pgf@tokb=\toks37
-\t@pgf@tokc=\toks38
-
-(D:\programs\MiKTeX\tex\generic\pgf\systemlayer\pgf.cfg
+\t@pgf@toka=\toks40
+\t@pgf@tokb=\toks41
+\t@pgf@tokc=\toks42
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
 )
-Driver file for pgf: pgfsys-pdftex.def
+Driver file for pgf: pgfsys-dvips.def
 
-(D:\programs\MiKTeX\tex\generic\pgf\systemlayer\pgfsys-pdftex.def
-File: pgfsys-pdftex.def 2014/10/11  (rcs-revision 1.35)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-dvips.def
+File: pgfsys-dvips.def 2014/07/09  (rcs-revision 1.25)
 
-(D:\programs\MiKTeX\tex\generic\pgf\systemlayer\pgfsys-common-pdf.def
-File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-postsc
+ript.def
+File: pgfsys-common-postscript.def 2008/10/01  (rcs-revision 1.22)
+\pgf@objectcount=\count149
 )))
-(D:\programs\MiKTeX\tex\generic\pgf\systemlayer\pgfsyssoftpath.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
+tex
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
-\pgfsyssoftpath@smallbuffer@items=\count149
-\pgfsyssoftpath@bigbuffer@items=\count150
+\pgfsyssoftpath@smallbuffer@items=\count150
+\pgfsyssoftpath@bigbuffer@items=\count151
 )
-(D:\programs\MiKTeX\tex\generic\pgf\systemlayer\pgfsysprotocol.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
+tex
 File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
 ))
-(D:\programs\MiKTeX\tex\generic\pgf\basiclayer\pgfcore.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
 Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
 
-(D:\programs\MiKTeX\tex\generic\pgf\math\pgfmath.code.tex
-(D:\programs\MiKTeX\tex\generic\pgf\math\pgfmathcalc.code.tex
-(D:\programs\MiKTeX\tex\generic\pgf\math\pgfmathutil.code.tex)
-(D:\programs\MiKTeX\tex\generic\pgf\math\pgfmathparser.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
 \pgfmath@dimen=\dimen180
-\pgfmath@count=\count151
-\pgfmath@box=\box65
-\pgfmath@toks=\toks39
-\pgfmath@stack@operand=\toks40
-\pgfmath@stack@operation=\toks41
+\pgfmath@count=\count152
+\pgfmath@box=\box66
+\pgfmath@toks=\toks43
+\pgfmath@stack@operand=\toks44
+\pgfmath@stack@operation=\toks45
 )
-(D:\programs\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.code.tex
-(D:\programs\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.basic.code.tex)
-(D:\programs\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.trigonometric.code.te
-x) (D:\programs\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.random.code.tex)
-(D:\programs\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.comparison.code.tex)
-(D:\programs\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.base.code.tex)
-(D:\programs\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.round.code.tex)
-(D:\programs\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.misc.code.tex)
-(D:\programs\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.integerarithmetics.co
-de.tex))) (D:\programs\MiKTeX\tex\generic\pgf\math\pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count152
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonomet
+ric.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.cod
+e.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
+thmetics.code.tex)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count153
 ))
-(D:\programs\MiKTeX\tex\generic\pgf\basiclayer\pgfcorepoints.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
+x
 File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
 \pgf@picminx=\dimen181
 \pgf@picmaxx=\dimen182
@@ -1320,102 +1340,116 @@ File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
 \pgf@zx=\dimen193
 \pgf@zy=\dimen194
 )
-(D:\programs\MiKTeX\tex\generic\pgf\basiclayer\pgfcorepathconstruct.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.
+code.tex
 File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
 \pgf@path@lastx=\dimen195
 \pgf@path@lasty=\dimen196
 )
-(D:\programs\MiKTeX\tex\generic\pgf\basiclayer\pgfcorepathusage.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code
+.tex
 File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
 \pgf@shorten@end@additional=\dimen197
 \pgf@shorten@start@additional=\dimen198
 )
-(D:\programs\MiKTeX\tex\generic\pgf\basiclayer\pgfcorescopes.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
+x
 File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
-\pgfpic=\box66
-\pgf@hbox=\box67
-\pgf@layerbox@main=\box68
-\pgf@picture@serial@count=\count153
+\pgfpic=\box67
+\pgf@hbox=\box68
+\pgf@layerbox@main=\box69
+\pgf@picture@serial@count=\count154
 )
-(D:\programs\MiKTeX\tex\generic\pgf\basiclayer\pgfcoregraphicstate.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
+ode.tex
 File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
 \pgflinewidth=\dimen199
 )
-(D:\programs\MiKTeX\tex\generic\pgf\basiclayer\pgfcoretransformations.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformation
+s.code.tex
 File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
 \pgf@pt@x=\dimen256
 \pgf@pt@y=\dimen257
 \pgf@pt@temp=\dimen258
-) (D:\programs\MiKTeX\tex\generic\pgf\basiclayer\pgfcorequick.code.tex
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
 )
-(D:\programs\MiKTeX\tex\generic\pgf\basiclayer\pgfcoreobjects.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.t
+ex
 File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
 )
-(D:\programs\MiKTeX\tex\generic\pgf\basiclayer\pgfcorepathprocessing.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing
+.code.tex
 File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
 )
-(D:\programs\MiKTeX\tex\generic\pgf\basiclayer\pgfcorearrows.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.te
+x
 File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
 \pgfarrowsep=\dimen259
 )
-(D:\programs\MiKTeX\tex\generic\pgf\basiclayer\pgfcoreshade.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
 \pgf@max=\dimen260
-\pgf@sys@shading@range@num=\count154
+\pgf@sys@shading@range@num=\count155
 )
-(D:\programs\MiKTeX\tex\generic\pgf\basiclayer\pgfcoreimage.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
 
-(D:\programs\MiKTeX\tex\generic\pgf\basiclayer\pgfcoreexternal.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
+tex
 File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
-\pgfexternal@startupbox=\box69
+\pgfexternal@startupbox=\box70
 ))
-(D:\programs\MiKTeX\tex\generic\pgf\basiclayer\pgfcorelayers.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
+x
 File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
 )
-(D:\programs\MiKTeX\tex\generic\pgf\basiclayer\pgfcoretransparency.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.c
+ode.tex
 File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
 )
-(D:\programs\MiKTeX\tex\generic\pgf\basiclayer\pgfcorepatterns.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.
+tex
 File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
 )))
-(D:\programs\MiKTeX\tex\generic\pgf\modules\pgfmoduleshapes.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
-\pgfnodeparttextbox=\box70
-)
-(D:\programs\MiKTeX\tex\generic\pgf\modules\pgfmoduleplot.code.tex
+\pgfnodeparttextbox=\box71
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
 File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
 )
-(D:\programs\MiKTeX\tex\latex\pgf\compatibility\pgfcomp-version-0-65.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65
+.sty
 Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
 \pgf@nodesepstart=\dimen261
 \pgf@nodesepend=\dimen262
 )
-(D:\programs\MiKTeX\tex\latex\pgf\compatibility\pgfcomp-version-1-18.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18
+.sty
 Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
-))
-(D:\programs\MiKTeX\tex\latex\pgf\frontendlayer\tikz.sty
-(D:\programs\MiKTeX\tex\latex\pgf\utilities\pgffor.sty
-(D:\programs\MiKTeX\tex\latex\pgf\utilities\pgfkeys.sty
-(D:\programs\MiKTeX\tex\generic\pgf\utilities\pgfkeys.code.tex))
-(D:\programs\MiKTeX\tex\latex\pgf\math\pgfmath.sty
-(D:\programs\MiKTeX\tex\generic\pgf\math\pgfmath.code.tex))
-(D:\programs\MiKTeX\tex\generic\pgf\utilities\pgffor.code.tex
+)) (/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
 Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
 
-(D:\programs\MiKTeX\tex\generic\pgf\math\pgfmath.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
 \pgffor@iter=\dimen263
 \pgffor@skip=\dimen264
-\pgffor@stack=\toks42
-\pgffor@toks=\toks43
+\pgffor@stack=\toks46
+\pgffor@toks=\toks47
 ))
-(D:\programs\MiKTeX\tex\generic\pgf\frontendlayer\tikz\tikz.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
 Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
 
-(D:\programs\MiKTeX\tex\generic\pgf\libraries\pgflibraryplothandlers.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
+.code.tex
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
-\pgf@plot@mark@count=\count155
+\pgf@plot@mark@count=\count156
 \pgfplotmarksize=\dimen265
 )
 \tikz@lastx=\dimen266
@@ -1424,71 +1458,72 @@ File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
 \tikz@lastysaved=\dimen269
 \tikzleveldistance=\dimen270
 \tikzsiblingdistance=\dimen271
-\tikz@figbox=\box71
-\tikz@figbox@bg=\box72
-\tikz@tempbox=\box73
-\tikz@tempbox@bg=\box74
-\tikztreelevel=\count156
-\tikznumberofchildren=\count157
-\tikznumberofcurrentchild=\count158
-\tikz@fig@count=\count159
+\tikz@figbox=\box72
+\tikz@figbox@bg=\box73
+\tikz@tempbox=\box74
+\tikz@tempbox@bg=\box75
+\tikztreelevel=\count157
+\tikznumberofchildren=\count158
+\tikznumberofcurrentchild=\count159
+\tikz@fig@count=\count160
 
-(D:\programs\MiKTeX\tex\generic\pgf\modules\pgfmodulematrix.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count160
-\pgfmatrixcurrentcolumn=\count161
-\pgf@matrix@numberofcolumns=\count162
+\pgfmatrixcurrentrow=\count161
+\pgfmatrixcurrentcolumn=\count162
+\pgf@matrix@numberofcolumns=\count163
 )
-\tikz@expandcount=\count163
+\tikz@expandcount=\count164
 
-(D:\programs\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarytop
-aths.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
-))) (D:\programs\MiKTeX\tex\latex\natbib\natbib.sty
+)))
+(/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip87
-\bibsep=\skip88
+\bibhang=\skip79
+\bibsep=\skip80
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count164
+\c@NAT@ctr=\count165
 )
-(D:\programs\MiKTeX\tex\latex\tocbibind\tocbibind.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tocbibind/tocbibind.sty
 Package: tocbibind 2010/10/13 v1.5k extra ToC listings
 Package tocbibind Info: The document has chapter divisions on input line 50.
 
 
 Package tocbibind Note: Using chapter style headings, unless overridden.
 
-) (D:\programs\MiKTeX\tex\latex\etoolbox\etoolbox.sty
-Package: etoolbox 2017/01/02 v2.4 e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count165
+) (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count166
 )
-(D:\programs\MiKTeX\tex\latex\amscls\amsthm.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2015/03/04 v2.20.2
-\thm@style=\toks44
-\thm@bodyfont=\toks45
-\thm@headfont=\toks46
-\thm@notefont=\toks47
-\thm@headpunct=\toks48
-\thm@preskip=\skip89
-\thm@postskip=\skip90
-\thm@headsep=\skip91
-\dth@everypar=\toks49
+\thm@style=\toks48
+\thm@bodyfont=\toks49
+\thm@headfont=\toks50
+\thm@notefont=\toks51
+\thm@headpunct=\toks52
+\thm@preskip=\skip81
+\thm@postskip=\skip82
+\thm@headsep=\skip83
+\dth@everypar=\toks53
 )
-\c@thm=\count166
-\c@cons=\count167
-\c@lemma=\count168
-\c@prop=\count169
-\c@defn=\count170
-\c@remark=\count171
-\c@algo=\count172
-\c@example=\count173
+\c@thm=\count167
+\c@cons=\count168
+\c@lemma=\count169
+\c@prop=\count170
+\c@defn=\count171
+\c@remark=\count172
+\c@algo=\count173
+\c@example=\count174
 
-(D:\programs\MiKTeX\tex\latex\upquote\upquote.sty
+(/usr/share/texlive/texmf-dist/tex/latex/upquote/upquote.sty
 Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
 tim
 
-(D:\programs\MiKTeX\tex\latex\base\textcomp.sty
-Package: textcomp 2017/04/05 v2.0i Standard LaTeX package
+(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2005/09/27 v1.99g Standard LaTeX package
 Package textcomp Info: Sub-encoding information:
 (textcomp)               5 = only ISO-Adobe without \textcurrency
 (textcomp)               4 = 5 + \texteuro
@@ -1502,13 +1537,13 @@ Package textcomp Info: Sub-encoding information:
 (textcomp)             See the documentation for details.
 Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 79.
 
-(D:\programs\MiKTeX\tex\latex\base\ts1enc.def
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.def
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
 Now handling font encoding TS1 ...
 ... processing UTF-8 mapping file for font encoding TS1
 
-(D:\programs\MiKTeX\tex\latex\base\ts1enc.dfu
-File: ts1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.dfu
+File: ts1enc.dfu 2015/12/03 v1.1r UTF-8 support for inputenc
    defining Unicode char U+00A2 (decimal 162)
    defining Unicode char U+00A3 (decimal 163)
    defining Unicode char U+00A4 (decimal 164)
@@ -1643,11 +1678,11 @@ Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
 ))
-(D:\programs\MiKTeX\tex\latex\caption\caption.sty
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
 
-(D:\programs\MiKTeX\tex\latex\caption\caption3.sty
-Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2016/02/04 v1.7-139 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 67.
 \captionmargin=\dimen272
 \captionmargin@=\dimen273
@@ -1658,16 +1693,18 @@ Package caption3 Info: TeX engine: e-TeX on input line 67.
 \caption@hangindent=\dimen278
 )
 Package caption Info: KOMA-Script document class.
-\c@ContinuedFloat=\count174
+\c@ContinuedFloat=\count175
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: longtable package is loaded.
 
-(D:\programs\MiKTeX\tex\latex\caption\ltcaption.sty
+(/usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
 Package: ltcaption 2013/06/09 v1.4-94 longtable captions (AR)
-))) (main.aux (title_6.aux)
-(introduction.aux) (chapter1.aux) (chapter2.aux) (conclusion.aux)
-(bibliography.aux))
+)
+Package caption Info: rotating package is loaded.
+)) (./main.aux
+(./title_6.aux) (./introduction.aux) (./chapter1.aux) (./chapter2.aux)
+(./conclusion.aux) (./bibliography.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
@@ -1690,22 +1727,21 @@ LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 8.
 LaTeX Font Info:    ... okay on input line 8.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 8.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 8.
- (D:\programs\MiKTeX\tex\latex\base\ts1cmr.fd
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 8.
 LaTeX Font Info:    Try loading font information for T2A+ftm on input line 8.
 
-(D:\programs\MiKTeX\tex\latex\pscyr\t2aftm.fd
+(/usr/local/share/texmf/tex/latex/pscyr/t2aftm.fd
 File: t2aftm.fd 2001/12/09 Fontinst v1.914 font definitions for T2A/ftm.
 )
 LaTeX Info: Redefining \microtypecontext on input line 8.
-Package microtype Info: Generating PDF output.
+Package microtype Info: Generating DVI output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
-Package microtype Info: Automatic font expansion enabled (level 2),
-(microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
-Package microtype Info: Using default expansion set `basictext'.
+Package microtype Info: No font expansion.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1715,9 +1751,9 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             See the microtype manual for details.
 
 *geometry* driver: auto-detecting
-*geometry* detected driver: pdftex
+*geometry* detected driver: dvips
 *geometry* verbose mode - [ preamble ] result:
-* driver: pdftex
+* driver: dvips
 * paper: <default>
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
@@ -1748,42 +1784,15 @@ Package microtype Info: Loading generic settings for font family
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(D:\programs\MiKTeX\tex\context\base\supp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count175
-\scratchdimen=\dimen279
-\scratchbox=\box75
-\nofMPsegments=\count176
-\nofMParguments=\count177
-\everyMPshowfont=\toks50
-\MPscratchCnt=\count178
-\MPscratchDim=\dimen280
-\MPnumerator=\count179
-\makeMPintoPDFobject=\count180
-\everyMPtoPDFconversion=\toks51
-) (D:\programs\MiKTeX\tex\latex\oberdiek\epstopdf-base.sty
-Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
-
-(D:\programs\MiKTeX\tex\latex\oberdiek\grfext.sty
-Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
-)
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-38.
-Package grfext Info: Graphics extension search list:
-(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 456.
-)
 \AtBeginShipoutBox=\box76
 Package hyperref Info: Link coloring ON on input line 8.
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
-(D:\programs\MiKTeX\tex\latex\hyperref\nameref.sty
-Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
-
-(D:\programs\MiKTeX\tex\generic\oberdiek\gettitlestring.sty
-Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count181
+\c@section@level=\count176
 )
 LaTeX Info: Redefining \ref on input line 8.
 LaTeX Info: Redefining \pageref on input line 8.
@@ -1793,26 +1802,38 @@ ABD: EveryShipout initializing macros
 Package scrbase Info: activating ukrainian \bibname on input line 8.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 10.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 10.
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 10.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 10.
+ [1
+
+]
 \openout2 = `title_6.aux'.
 
- (title_6.tex
-(D:\programs\MiKTeX\tex\latex\microtype\mt-cmr.cfg
+ (./title_6.tex
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
-)<<ot1.cmap>><<oml.cmap>><<oms.cmap>><<omx.cmap>>
+)
 LaTeX Font Info:    Try loading font information for U+msa on input line 40.
- (D:\programs\MiKTeX\tex\latex\amsfonts\umsa.fd
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-(D:\programs\MiKTeX\tex\latex\microtype\mt-msa.cfg
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 40.
 
-(D:\programs\MiKTeX\tex\latex\amsfonts\umsb.fd
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-(D:\programs\MiKTeX\tex\latex\microtype\mt-msb.cfg
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 Overfull \hbox (61.22551pt too wide) in paragraph at lines 52--52
@@ -1838,22 +1859,25 @@ Package babel Info: Redefining ukrainian shorthand "|
 (babel)             in language  on input line 10.
 Package babel Info: Redefining ukrainian shorthand "~
 (babel)             in language  on input line 10.
- [1
+ [2
 
-
-{C:/Users/Preston/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+]
 Package tocbasic Info: character protrusion at toc deactivated on input line 12
 .
-
-(main.toc
+ (./main.toc
 LaTeX Font Info:    Try loading font information for T1+ftm on input line 1.
- (D:\programs\MiKTeX\tex\latex\pscyr\t1ftm.fd
+ (/usr/local/share/texmf/tex/latex/pscyr/t1ftm.fd
 File: t1ftm.fd 2004/03/23 Fontinst v1.914 font definitions for T1/ftm.
-)<<t1.cmap>>
+)
 Package microtype Info: Loading generic settings for font family
 (microtype)             `ftm' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
+
+Overfull \hbox (80.49367pt too wide) in paragraph at lines 8--8
+ [] [] []  
+ []
+
 )
 \tf@toc=\write4
 \openout4 = `main.toc'.
@@ -1866,19 +1890,29 @@ Package babel Info: Redefining ukrainian shorthand "|
 (babel)             in language  on input line 13.
 Package babel Info: Redefining ukrainian shorthand "~
 (babel)             in language  on input line 13.
- [2
+ [3
 
 
 ]
 \openout2 = `introduction.aux'.
 
-
-(introduction.tex
+ (./introduction.tex
 Package babel Info: Redefining ukrainian shorthand "|
 (babel)             in language  on input line 2.
 Package babel Info: Redefining ukrainian shorthand "~
 (babel)             in language  on input line 2.
-)
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 16.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 16.
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 16.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 16.
+ [4
+
+
+])
 Package babel Info: Redefining ukrainian shorthand "|
 (babel)             in language  on input line 13.
 Package babel Info: Redefining ukrainian shorthand "~
@@ -1887,13 +1921,10 @@ Package babel Info: Redefining ukrainian shorthand "|
 (babel)             in language  on input line 13.
 Package babel Info: Redefining ukrainian shorthand "~
 (babel)             in language  on input line 13.
- [3
-
-
-]
+ [5]
 \openout2 = `chapter1.aux'.
 
- (chapter1.tex
+ (./chapter1.tex
 chapter 1.
 Package babel Info: Redefining ukrainian shorthand "|
 (babel)             in language  on input line 1.
@@ -1918,6 +1949,13 @@ Package babel Info: Redefining ukrainian shorthand "|
 (babel)             in language  on input line 3.
 Package babel Info: Redefining ukrainian shorthand "~
 (babel)             in language  on input line 3.
+
+Overfull \hbox (8.84323pt too wide) in paragraph at lines 5--6
+\T2A/ftm/m/n/14.4 му-ва-н-ня фор-му-лю-№-ться на-сту-пним чи-ном: зна-йти ве-кт
+ор , $\OML/cmm/m/it/14.4 X \OT1/cmr/m/n/14.4 = (\OML/cmm/m/it/14.4 x[]; x[]; []
+ ; x[]\OT1/cmr/m/n/14.4 )$
+ []
+
 Package babel Info: Redefining ukrainian shorthand "|
 (babel)             in language  on input line 29.
 Package babel Info: Redefining ukrainian shorthand "~
@@ -1926,7 +1964,7 @@ Package babel Info: Redefining ukrainian shorthand "|
 (babel)             in language  on input line 29.
 Package babel Info: Redefining ukrainian shorthand "~
 (babel)             in language  on input line 29.
-[4
+[6
 
 
 
@@ -1936,48 +1974,68 @@ Package babel Info: Redefining ukrainian shorthand "|
 Package babel Info: Redefining ukrainian shorthand "~
 (babel)             in language  on input line 34.
 LaTeX Font Info:    Try loading font information for TS1+ftm on input line 43.
-LaTeX Font Info:    No file TS1ftm.fd. on input line 43.
-
-
-LaTeX Font Warning: Font shape `TS1/ftm/m/n' undefined
-(Font)              using `TS1/cmr/m/n' instead
-(Font)              for symbol `textbullet' on input line 43.
-
-Package babel Info: Redefining ukrainian shorthand "|
-(babel)             in language  on input line 46.
-Package babel Info: Redefining ukrainian shorthand "~
-(babel)             in language  on input line 46.
-Package babel Info: Redefining ukrainian shorthand "|
-(babel)             in language  on input line 46.
-Package babel Info: Redefining ukrainian shorthand "~
-(babel)             in language  on input line 46.
-[5]
+ (/usr/share/texmf/tex/latex/scalable-cyrfonts-tex/ts1ftm.fd
+File: ts1ftm.fd 2014/01/03 Fontinst v1.933 font definitions for TS1/ftm.
+)
 Package microtype Info: Loading generic settings for font family
 (microtype)             `ftm' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 Package babel Info: Redefining ukrainian shorthand "|
-(babel)             in language  on input line 56.
+(babel)             in language  on input line 47.
 Package babel Info: Redefining ukrainian shorthand "~
-(babel)             in language  on input line 56.
+(babel)             in language  on input line 47.
 Package babel Info: Redefining ukrainian shorthand "|
-(babel)             in language  on input line 56.
+(babel)             in language  on input line 47.
 Package babel Info: Redefining ukrainian shorthand "~
-(babel)             in language  on input line 56.
- [6]
-Package babel Info: Redefining ukrainian shorthand "|
-(babel)             in language  on input line 63.
-Package babel Info: Redefining ukrainian shorthand "~
-(babel)             in language  on input line 63.
-Package babel Info: Redefining ukrainian shorthand "|
-(babel)             in language  on input line 63.
-Package babel Info: Redefining ukrainian shorthand "~
-(babel)             in language  on input line 63.
+(babel)             in language  on input line 47.
  [7]
 Package babel Info: Redefining ukrainian shorthand "|
-(babel)             in language  on input line 65.
+(babel)             in language  on input line 62.
 Package babel Info: Redefining ukrainian shorthand "~
-(babel)             in language  on input line 65.
+(babel)             in language  on input line 62.
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 62.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 62.
+ [8]
+Overfull \hbox (2.86136pt too wide) in paragraph at lines 79--80
+[]\T2A/ftm/m/n/14.4 Методи ви-пад-ко-во-го по-шу-ку ре-а-лi-зу-ють iте-ра-тив-н
+ий про-цес ру-ху опти-
+ []
+
+
+Overfull \hbox (0.7383pt too wide) in paragraph at lines 79--80
+\T2A/ftm/m/n/14.4 мi-за-цiй-них змiн-них в про-сто-рi з ви-ко-ри-ста-н-ням ви-п
+ад-ко-вих на-прям-кiв. Одна
+ []
+
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 80.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 80.
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 80.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 80.
+[9]
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 86.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 86.
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 108.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 108.
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 108.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 108.
+ [10]
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 119.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 119.
 )
 Package babel Info: Redefining ukrainian shorthand "|
 (babel)             in language  on input line 14.
@@ -1987,92 +2045,584 @@ Package babel Info: Redefining ukrainian shorthand "|
 (babel)             in language  on input line 14.
 Package babel Info: Redefining ukrainian shorthand "~
 (babel)             in language  on input line 14.
- [8]
+ [11]
 \openout2 = `chapter2.aux'.
 
- (chapter2.tex
+ (./chapter2.tex
 chapter 2.
 Package babel Info: Redefining ukrainian shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ukrainian shorthand "~
 (babel)             in language  on input line 1.
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--20
+
+ []
+
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 25.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 25.
 Package babel Info: Redefining ukrainian shorthand "|
 (babel)             in language  on input line 30.
 Package babel Info: Redefining ukrainian shorthand "~
 (babel)             in language  on input line 30.
 Package babel Info: Redefining ukrainian shorthand "|
-(babel)             in language  on input line 33.
+(babel)             in language  on input line 30.
 Package babel Info: Redefining ukrainian shorthand "~
-(babel)             in language  on input line 33.
-Package babel Info: Redefining ukrainian shorthand "|
-(babel)             in language  on input line 33.
-Package babel Info: Redefining ukrainian shorthand "~
-(babel)             in language  on input line 33.
-[9
+(babel)             in language  on input line 30.
+[12
 
 
 
 ]
 Package babel Info: Redefining ukrainian shorthand "|
-(babel)             in language  on input line 48.
+(babel)             in language  on input line 52.
 Package babel Info: Redefining ukrainian shorthand "~
-(babel)             in language  on input line 48.
+(babel)             in language  on input line 52.
 Package babel Info: Redefining ukrainian shorthand "|
-(babel)             in language  on input line 48.
+(babel)             in language  on input line 52.
 Package babel Info: Redefining ukrainian shorthand "~
-(babel)             in language  on input line 48.
- [10]
-Package babel Info: Redefining ukrainian shorthand "|
-(babel)             in language  on input line 82.
-Package babel Info: Redefining ukrainian shorthand "~
-(babel)             in language  on input line 82.
+(babel)             in language  on input line 52.
+ [13]
 Package babel Info: Redefining ukrainian shorthand "|
 (babel)             in language  on input line 82.
 Package babel Info: Redefining ukrainian shorthand "~
 (babel)             in language  on input line 82.
- [11]
 Package babel Info: Redefining ukrainian shorthand "|
-(babel)             in language  on input line 117.
+(babel)             in language  on input line 82.
 Package babel Info: Redefining ukrainian shorthand "~
-(babel)             in language  on input line 117.
+(babel)             in language  on input line 82.
+ [14]
 Package babel Info: Redefining ukrainian shorthand "|
-(babel)             in language  on input line 117.
+(babel)             in language  on input line 115.
 Package babel Info: Redefining ukrainian shorthand "~
-(babel)             in language  on input line 117.
- [12]
-Overfull \hbox (2.9019pt too wide) in paragraph at lines 128--130
-[][]\T2A/ftm/bx/n/14.4 Теорема 2.3. []$[]\OML/cmm/m/it/14.4 x[] \OMS/cmsy/m/n/1
-4.4 2 \U/msb/m/n/14.4 R[]\OML/cmm/m/it/14.4 ; []x[]; x[]; [] ; x[][]s[]; s[]; [
-] ; s[]$
+(babel)             in language  on input line 115.
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 115.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 115.
+ [15]
+Overfull \hbox (2.9019pt too wide) in paragraph at lines 122--124
+[]\T2A/ftm/bx/n/14.4 Теорема 2.3. []$[]\OML/cmm/m/it/14.4 x[] \OMS/cmsy/m/n/14.
+4 2 \U/msb/m/n/14.4 R[]\OML/cmm/m/it/14.4 ; []x[]; x[]; [] ; x[][]s[]; s[]; [] 
+; s[]$
  []
 
 
-LaTeX Warning: Command \cyrii invalid in math mode on input line 134.
+LaTeX Warning: Command \cyrii invalid in math mode on input line 128.
 
 
-LaTeX Warning: Command \cyrii invalid in math mode on input line 136.
+LaTeX Warning: Command \cyrii invalid in math mode on input line 130.
 
 
-LaTeX Warning: Command \cyrii invalid in math mode on input line 137.
+LaTeX Warning: Command \cyrii invalid in math mode on input line 131.
 
 Package babel Info: Redefining ukrainian shorthand "|
-(babel)             in language  on input line 144.
+(babel)             in language  on input line 146.
 Package babel Info: Redefining ukrainian shorthand "~
-(babel)             in language  on input line 144.
+(babel)             in language  on input line 146.
 Package babel Info: Redefining ukrainian shorthand "|
-(babel)             in language  on input line 144.
+(babel)             in language  on input line 146.
 Package babel Info: Redefining ukrainian shorthand "~
-(babel)             in language  on input line 144.
-[13]
+(babel)             in language  on input line 146.
+[16]
+Overfull \hbox (10.02129pt too wide) in paragraph at lines 156--157
+[]\T2A/ftm/m/n/14.4 Отже роз-гля-ну-тий чо-ти-рьо-хкро-ко-вий ме-тод (2.0.1), (
+2.1.2), (2.1.3), (2.1.4)
+ []
+
 Package babel Info: Redefining ukrainian shorthand "|
-(babel)             in language  on input line 167.
+(babel)             in language  on input line 164.
 Package babel Info: Redefining ukrainian shorthand "~
-(babel)             in language  on input line 167.
+(babel)             in language  on input line 164.
 Package babel Info: Redefining ukrainian shorthand "|
-(babel)             in language  on input line 167.
+(babel)             in language  on input line 164.
 Package babel Info: Redefining ukrainian shorthand "~
-(babel)             in language  on input line 167.
- [14])
+(babel)             in language  on input line 164.
+[17]
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 169.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 169.
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 183.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 183.
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 183.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 183.
+ [18]
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 212.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 212.
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 212.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 212.
+ [19]
+
+! LaTeX Error: File `image' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.215 ...includegraphics[width=1\linewidth]{image}
+                                                  } a) \\
+? 
+
+! LaTeX Error: File `image' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.219 ...includegraphics[width=1\linewidth]{image}
+                                                  } \\b)
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.219 ...udegraphics[width=1\linewidth]{image}} \\
+                                                  b)
+? 
+
+! LaTeX Error: File `image' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.223 ...includegraphics[width=1\linewidth]{image}
+                                                  } c) \\
+? 
+
+! LaTeX Error: File `image' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.227 ...includegraphics[width=1\linewidth]{image}
+                                                  } d) \\
+? 
+
+Underfull \hbox (badness 1112) in paragraph at lines 232--232
+[][][]|\T2A/ftm/m/n/14.4 Correlati-on si-gnal peaks: a) numeri-cal experi-ment,
+ b) regi-stered
+ []
+
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 236.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 236.
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 236.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 236.
+[20]
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 263.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 263.
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 263.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 263.
+ [21]
+Overfull \hbox (30.43697pt too wide) in paragraph at lines 292--292
+ [] 
+ []
+
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 294.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 294.
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 294.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 294.
+[22]
+Overfull \vbox (0.76483pt too high) has occurred while \output is active []
+
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 294.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 294.
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 294.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 294.
+
+[23]
+Overfull \hbox (17.13617pt too wide) in paragraph at lines 319--319
+ [] 
+ []
+
+
+Overfull \vbox (0.76483pt too high) has occurred while \output is active []
+
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 321.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 321.
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 321.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 321.
+
+[24]
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 352.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 352.
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 352.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 352.
+ [25]
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 379.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 379.
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 379.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 379.
+ [26]
+Overfull \hbox (31.74025pt too wide) in paragraph at lines 408--408
+ [] 
+ []
+
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 410.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 410.
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 410.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 410.
+[27]
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 410.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 410.
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 410.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 410.
+ [28]
+Overfull \hbox (31.74025pt too wide) in paragraph at lines 435--435
+ [] 
+ []
+
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 437.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 437.
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 437.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 437.
+[29]
+Overfull \hbox (31.30782pt too wide) in paragraph at lines 466--466
+ [] 
+ []
+
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 468.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 468.
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 468.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 468.
+[30]
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 468.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 468.
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 468.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 468.
+ [31]
+Overfull \hbox (31.30782pt too wide) in paragraph at lines 493--493
+ [] 
+ []
+
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 495.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 495.
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 495.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 495.
+[32]
+Overfull \hbox (2425.3569pt too wide) detected at line 497
+\OML/cmm/m/it/14.4 ^^^\OT1/cmr/m/n/14.4 (\OML/cmm/m/it/14.4 x\OT1/cmr/m/n/14.4 
+) = 1352\OML/cmm/m/it/14.4 :\OT1/cmr/m/n/14.4 99688810716\OML/cmm/m/it/14.4 x[]
+ \OMS/cmsy/m/n/14.4 ^^@ \OT1/cmr/m/n/14.4 70000\OML/cmm/m/it/14.4 :\OT1/cmr/m/n
+/14.4 0 + [] + [] + [] + [] + [] + []
+ []
+
+
+Overfull \hbox (261.37169pt too wide) in paragraph at lines 524--524
+ [] 
+ []
+
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 526.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 526.
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 526.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 526.
+[33]
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 526.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 526.
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 526.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 526.
+ [34]
+Overfull \hbox (265.63408pt too wide) in paragraph at lines 551--551
+ [] 
+ []
+
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 553.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 553.
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 553.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 553.
+[35]
+Overfull \hbox (46.00812pt too wide) detected at line 555
+\OML/cmm/m/it/14.4 ^^^\OT1/cmr/m/n/14.4 (\OML/cmm/m/it/14.4 x\OT1/cmr/m/n/14.4 
+) = [][] + [][] + [][]
+ []
+
+
+Overfull \hbox (5.34506pt too wide) in paragraph at lines 582--582
+ [] 
+ []
+
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 584.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 584.
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 584.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 584.
+[36]
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 584.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 584.
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 584.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 584.
+ [37]
+Overfull \hbox (5.34506pt too wide) in paragraph at lines 609--609
+ [] 
+ []
+
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 611.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 611.
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 611.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 611.
+[38]
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 642.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 642.
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 642.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 642.
+ [39]
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 669.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 669.
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 669.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 669.
+ [40]
+Overfull \hbox (10.14026pt too wide) in paragraph at lines 698--698
+ [] 
+ []
+
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 700.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 700.
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 700.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 700.
+[41]
+Overfull \hbox (10.14026pt too wide) in paragraph at lines 725--725
+ [] 
+ []
+
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 727.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 727.
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 727.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 727.
+[42]
+Overfull \hbox (10.14026pt too wide) in paragraph at lines 756--756
+ [] 
+ []
+
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 758.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 758.
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 758.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 758.
+[43]
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 785.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 785.
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 785.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 785.
+ [44]
+Overfull \hbox (256.9724pt too wide) detected at line 787
+\OML/cmm/m/it/14.4 ^^^\OT1/cmr/m/n/14.4 (\OML/cmm/m/it/14.4 x\OT1/cmr/m/n/14.4 
+) = \OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/m/n/14.4 90\OML/cmm/m/it/14.4 x[] \OT1/cmr/m
+/n/14.4 + 90\OML/cmm/m/it/14.4 x[] \OT1/cmr/m/n/14.4 + [][] + 100 [][] + 10\OML
+/cmm/m/it/14.4 :\OT1/cmr/m/n/14.4 1 [][] + [] [] + [][] + 10\OML/cmm/m/it/14.4 
+:\OT1/cmr/m/n/14.4 1 [][]
+ []
+
+
+Overfull \hbox (333.45805pt too wide) in paragraph at lines 814--814
+ [] 
+ []
+
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 816.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 816.
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 816.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 816.
+[45]
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 816.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 816.
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 816.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 816.
+ [46]
+Overfull \hbox (333.45805pt too wide) in paragraph at lines 841--841
+ [] 
+ []
+
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 843.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 843.
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 843.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 843.
+[47]
+Overfull \hbox (134.16214pt too wide) in paragraph at lines 872--872
+ [] 
+ []
+
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 874.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 874.
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 874.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 874.
+[48]
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 874.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 874.
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 874.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 874.
+ [49]
+Overfull \hbox (129.84215pt too wide) in paragraph at lines 899--899
+ [] 
+ []
+
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 901.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 901.
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 901.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 901.
+[50]
+Overfull \hbox (2.94026pt too wide) in paragraph at lines 930--930
+ [] 
+ []
+
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 932.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 932.
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 932.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 932.
+[51]
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 932.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 932.
+Package babel Info: Redefining ukrainian shorthand "|
+(babel)             in language  on input line 932.
+Package babel Info: Redefining ukrainian shorthand "~
+(babel)             in language  on input line 932.
+ [52]
+Overfull \hbox (2.94026pt too wide) in paragraph at lines 957--957
+ [] 
+ []
+
+)
 Package babel Info: Redefining ukrainian shorthand "|
 (babel)             in language  on input line 15.
 Package babel Info: Redefining ukrainian shorthand "~
@@ -2081,10 +2631,10 @@ Package babel Info: Redefining ukrainian shorthand "|
 (babel)             in language  on input line 15.
 Package babel Info: Redefining ukrainian shorthand "~
 (babel)             in language  on input line 15.
- [15]
+ [53]
 \openout2 = `conclusion.aux'.
 
- (conclusion.tex
+ (./conclusion.tex
 Package babel Info: Redefining ukrainian shorthand "|
 (babel)             in language  on input line 2.
 Package babel Info: Redefining ukrainian shorthand "~
@@ -2098,14 +2648,14 @@ Package babel Info: Redefining ukrainian shorthand "|
 (babel)             in language  on input line 16.
 Package babel Info: Redefining ukrainian shorthand "~
 (babel)             in language  on input line 16.
- [16
+ [54
 
 
 
 ]
 \openout2 = `bibliography.aux'.
 
- (bibliography.tex
+ (./bibliography.tex
 Package babel Info: Redefining ukrainian shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ukrainian shorthand "~
@@ -2119,46 +2669,30 @@ Package babel Info: Redefining ukrainian shorthand "|
 (babel)             in language  on input line 17.
 Package babel Info: Redefining ukrainian shorthand "~
 (babel)             in language  on input line 17.
- [17
+ [55
 
 
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 19.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 19.
- (main.aux
-(title_6.aux) (introduction.aux) (chapter1.aux) (chapter2.aux) (conclusion.aux)
-(bibliography.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 19.
+Package atveryend Info: Executing hook `AfterLastShipout' on input line 19.
+\BKM@file=\write5
+\openout5 = `main.out.ps'.
+
+ (./main.aux
+(./title_6.aux) (./introduction.aux) (./chapter1.aux) (./chapter2.aux)
+(./conclusion.aux) (./bibliography.aux))
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 19.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 19.
-
-
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 19.
  ) 
 Here is how much of TeX's memory you used:
- 30103 strings out of 493328
- 511332 string characters out of 3143023
- 726456 words of memory out of 3000000
- 32861 multiletter control sequences out of 15000+200000
- 34192 words of font info for 141 fonts, out of 3000000 for 9000
+ 28991 strings out of 493030
+ 494010 string characters out of 6136260
+ 677432 words of memory out of 5000000
+ 31989 multiletter control sequences out of 15000+600000
+ 22211 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 64i,16n,66p,8817b,561s stack positions out of 5000i,500n,10000p,200000b,50000s
-{D:/programs/MiKTeX/fonts/enc/t2/t2a.enc} <C:\Users\Preston\AppData\Local\MiK
-TeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1440.pk><D:/programs/MiKTeX/font
-s/type1/public/amsfonts/cm/cmex10.pfb><D:/programs/MiKTeX/fonts/type1/public/am
-sfonts/cm/cmmi10.pfb><D:/programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.
-pfb><D:/programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><D:/programs/M
-iKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/programs/MiKTeX/fonts/type1/
-public/amsfonts/cm/cmr12.pfb><D:/programs/MiKTeX/fonts/type1/public/amsfonts/cm
-/cmsy10.pfb><D:/programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-<D:/programs/MiKTeX/fonts/type1/public/pscyr/times.pfb><D:/programs/MiKTeX/font
-s/type1/public/pscyr/timesbd.pfb><D:/programs/MiKTeX/fonts/type1/public/pscyr/t
-imesi.pfb>
-Output written on main.pdf (17 pages, 196590 bytes).
-PDF statistics:
- 214 PDF objects out of 1000 (max. 8388607)
- 45 named destinations out of 1000 (max. 500000)
- 28269 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 64i,16n,66p,1383b,555s stack positions out of 5000i,500n,10000p,200000b,80000s
 
+Output written on main.dvi (55 pages, 208160 bytes).

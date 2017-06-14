@@ -6,8 +6,9 @@
 
 % Распознаваемый PDF
 \usepackage{cmap}
-\usepackage{pscyr}
-\renewcommand{\rmdefault}{ftm}%для timesnewroman
+%\usepackage{pscyr}
+%\usepackage<cp1251>{inputenc}</cp1251></T2A>
+%\renewcommand{\rmdefault}{ftm}%для timesnewroman
 % Кодировка
 \usepackage[T1,T2A]{fontenc}
 \usepackage[utf8]{inputenc}
@@ -51,6 +52,8 @@ bottom=20mm
 \usepackage{makecell}
 \usepackage{longtable}
 \usepackage{amssymb}
+\usepackage{caption}
+\captionsetup[table]{name=Таблиця,justification=raggedleft,singlelinecheck=off}
 
 % Формулы
 \usepackage{amsmath}
@@ -82,6 +85,7 @@ bottom=20mm
  
 % Вставка изображений
 \usepackage{graphicx}
+\graphicspath{ {assets/} }
 \usepackage{float}
 
 % Названия цветов
@@ -184,3 +188,4 @@ bookmarksopenlevel=2
     \endgroup
   \fi}
 \makeatother
+
