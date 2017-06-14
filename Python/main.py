@@ -49,8 +49,8 @@ def main():
             printInfo(f[i], x_start_j, args.eps, {'x_star': x_star[i], 'f_star': f_star[i]}, fourStepsRes, threeStepsRes)
             printInfo(f[i], x_start_j, args.eps, {'x_star': x_star[i], 'f_star': f_star[i]}, nonQvadFourStepsRes, nonQvadThreeStepsRes)
             if args.p:
-                showPlot(f[i], fourStepsRes, threeStepsRes)
-                showPlot(f[i], nonQvadFourStepsRes, nonQvadThreeStepsRes)
+                showPlot(f[i], x_start_j, args.eps, fourStepsRes, threeStepsRes)
+                showPlot(f[i], x_start_j, args.eps, nonQvadFourStepsRes, nonQvadThreeStepsRes)
 
 main()
 

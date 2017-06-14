@@ -41,8 +41,8 @@ def BreakCriterion(f, x_k, x_k_minus_1, eps):
     return first and second and third
 
 def gamma(f, x, s):
-    numerator = np.matrix(Gradient(f, x))*(Hessian(f, x)*np.matrix(s).T)
-    denominator = np.matrix(s)*(Hessian(f, x)*np.matrix(s).T)
+    numerator = np.matrix(Gradient(f, x))@(Hessian(f, x)*np.matrix(s).T)
+    denominator = np.matrix(s)@(Hessian(f, x)*np.matrix(s).T)
     return 0 if denominator == 0 else numerator / denominator
 
 def gamma_non_kvad(f, x_k, x_k_minus_first, x_k_minus_second):
@@ -57,8 +57,6 @@ def findStep(f, x_k, s_k):
     mod_f = lambdify(x_array[0:len(x_k)], f, modules='numpy')
     mod_fn = lambdify(beta, mod_f(*point), modules='numpy')
     beta_min = minimize_scalar(mod_fn).x
-    if beta_min < 0:
-        print(beta_min)
     return beta_min
 
 def f_at_point(f, point, isRound = False):
@@ -77,10 +75,16 @@ def printInfo(f, x0, eps, ExpectedRes, ActualResFourCGM, ActualResThreeCGM):
     acThreeRes = "" if len(ActualResThreeCGM) == 0 else "Actual Result 3 steps CGM: x* = " + str(ActualResThreeCGM['x_star']) + " f* = " + str(ActualResThreeCGM['f_star']) + " for k = %d" %(ActualResThreeCGM['k']) + " steps"
     breakLine = "\n"
     f_at_init_point = "Function at initial point: " + str(f_at_point(f, x0, True))
+
+    fourCGMtableRow = "& \multirow{2}{*}{"+str(x0)+"} & \multirow{2}{*}{"+str(f_at_point(f, x0, True))+"} & 4 кроковий & "+str(ActualResFourCGM['x_star'])+" & "+str(ActualResFourCGM['f_star'])+" & %d" %(ActualResFourCGM['k']) + " \\ "		
+    threeCGMtableRow = "\hhline{~~~----} & & & 3 кроковий & "+str(ActualResThreeCGM['x_star'])+" & "+str(ActualResThreeCGM['f_star'])+" & %d" %(ActualResThreeCGM['k']) + " \\ "
+    msg = "Точний розв'язок задачі: " 
     print(latex(f))
+    print(msg)
+    print(fourCGMtableRow + breakLine + threeCGMtableRow + breakLine + "\hhline{~------}")
     print(test_f + breakLine + test_point + breakLine + f_at_init_point + breakLine + accuracy + breakLine + exRes + breakLine + acFourRes + breakLine + acThreeRes + breakLine)
 
-def showPlot(f, fourStepsRes, threeStepsRes):
+def showPlot(f, x0, eps, fourStepsRes, threeStepsRes):
     f_x_star_fourSteps = f_at_point(f, fourStepsRes['x_star'])
     f_x_star_threeSteps = f_at_point(f, threeStepsRes['x_star'])
     
@@ -89,10 +93,14 @@ def showPlot(f, fourStepsRes, threeStepsRes):
     log_fourSteps = [Decimal(f_point_k - f_x_star_fourSteps).log10() for f_point_k in fourSteps_f_points]
     log_threeSteps = [Decimal(f_point_k - f_x_star_threeSteps).log10() for f_point_k in threeSteps_f_points]
 
-    plt.plot(range(fourStepsRes['k'] + 1), log_fourSteps)
-    plt.plot(range(threeStepsRes['k'] + 1), log_threeSteps, 'r--')
-
+    #plt.subplot(213)
+    fourStepLine = plt.plot(range(fourStepsRes['k'] + 1), log_fourSteps, label="4-steps")
+    threeStepLine = plt.plot(range(threeStepsRes['k'] + 1), log_threeSteps, 'r--', label="3-steps")
+    #plt.legend([fourStepLine, threeStepLine], ["4-steps", "3-steps"], loc='upper center')
+    #plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
+    
     plt.ylabel('lg [f(x_i) - f(x*)]')
     plt.xlabel('i')
+    plt.title("x0 = " + str(x0) + '  eps = ' + str(eps))
     
     plt.show()
