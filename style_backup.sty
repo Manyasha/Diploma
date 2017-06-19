@@ -1,0 +1,191 @@
+% Стилевой файл для оформления 
+% курсовых, дипломных работ
+% для математических специальностей
+
+\ProvidesPackage{myStyle}
+
+% Распознаваемый PDF
+\usepackage{cmap}
+%\usepackage{pscyr}
+%\usepackage<cp1251>{inputenc}</cp1251></T2A>
+%\renewcommand{\rmdefault}{ftm}%для timesnewroman
+% Кодировка
+\usepackage[T1,T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+
+% Языковые настройки
+\usepackage[english, russian, ukrainian]{babel}
+
+% Микротипографика
+\usepackage{microtype}
+
+% Поля
+\usepackage[
+left=30mm,
+right=15mm,
+top=20mm,
+bottom=20mm
+]{geometry}
+
+% Интервалы
+\usepackage{setspace}
+\onehalfspacing
+% альтернативный вариант:
+% \linespread{1.35}
+\renewcommand{\arraystretch}{1.5}
+\setlength{\parskip}{6pt}
+
+% Отступы
+\usepackage{indentfirst}
+\setlength{\parindent}{1.25cm}
+
+% Списки
+\usepackage{enumitem}
+\setlist{noitemsep}
+
+% Таблицы
+\usepackage{booktabs}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{hhline}
+\usepackage{rotating}
+\usepackage{makecell}
+\usepackage{longtable}
+\usepackage{amssymb}
+\usepackage{caption}
+\captionsetup[table]{name=Таблиця,justification=raggedleft,singlelinecheck=off}
+
+% Формулы
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{bm}
+\usepackage{icomma}
+\usepackage{mathtools}
+
+% Заголовки
+\usepackage[explicit]{titlesec}
+
+\titleformat{\chapter}[display]
+{\large\bfseries\centering}
+{\MakeUppercase{\chaptertitlename~\thechapter}}
+{10pt}
+{\MakeUppercase{#1}}
+
+\titlespacing*{\chapter}{0pt}{-30pt}{16pt}
+ 
+\titleformat{\section}
+    {\large\bfseries}
+    {\thesection.~#1}
+    {1em}{}
+ 
+\titleformat{\subsection}
+    {\normalsize\bfseries}
+    {\thesubsection.~#1}
+    {1em}{}
+ 
+% Вставка изображений
+\usepackage{graphicx}
+\graphicspath{ {assets/} }
+\usepackage{float}
+
+% Названия цветов
+\usepackage[dvipsnames, svgnames, x11names]{xcolor}
+
+% Гиперссылки
+\usepackage[
+unicode,
+colorlinks=true,
+linkcolor=black,
+urlcolor=black,
+citecolor=black,
+filecolor=black,
+bookmarks=true,
+bookmarksopenlevel=2
+]{hyperref}
+
+% Закладки
+\usepackage{bookmark}
+
+% Колонтитулы
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{}
+\chead{}
+\rhead{\thepage}
+\lfoot{}
+\cfoot{}
+\rfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancypagestyle{plain}{
+    \fancyhf{}
+    \rhead{\thepage}}
+
+% TikZ
+\usepackage{pgf,tikz}
+% \usetikzlibrary{...} % optional
+
+% Листинги
+%\usepackage{minted}
+%\usemintedstyle{vs} % другие стили: https://help.farbox.com/pygments.html
+
+% Оформление списка литературы
+\renewcaptionname{ukrainian}{\bibname}{Список літератури} 
+\usepackage[square,numbers,sort&compress]{natbib}
+\renewcommand{\bibnumfmt}[1]{#1.} 
+\setlength{\bibsep}{3pt}
+
+% Оформление содержания
+\usepackage[nottoc]{tocbibind}
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd{\l@chapter}{\hss}{\hss\normalfont}{}{}
+\makeatother
+
+% Теоремы, определения и т. п.
+\usepackage{amsthm}
+\newtheorem{thm}{Теорема}[chapter]
+\newtheorem{cons}{Наслідок}[chapter]
+\newtheorem{lemma}{Лема}[chapter]
+\newtheorem{prop}{Припущення}[chapter]
+
+\theoremstyle{definition}
+\newtheorem{defn}{Означення}[chapter]
+\newtheorem{remark}{Зауваження}[chapter]
+\newtheorem{algo}{Алгоритм}[chapter]
+\newtheorem{example}{Задача}[chapter]
+
+% Разное
+
+% прямые апострофы
+\usepackage{upquote}
+
+% отключение шрифта Sans Serif
+\renewcommand{\sfdefault}{\rmdefault}
+
+% нумерация в списках: 1) вместо 1. 
+\renewcommand{\labelenumi}{\theenumi)}
+
+% точка в подписях к рисункам и таблицам
+\usepackage[labelsep=period]{caption}
+
+% отключение полужирного начертания 
+% в номерах страниц
+\makeatletter
+\renewcommand*\l@chapter[2]{%
+  \ifnum \c@tocdepth >\m@ne
+    \addpenalty{-\@highpenalty}%
+    \vskip 1.0em \@plus\p@
+    \setlength\@tempdima{1.5em}%
+    \begingroup
+      \parindent \z@ \rightskip \@pnumwidth
+      \parfillskip -\@pnumwidth
+      \leavevmode \bfseries
+      \advance\leftskip\@tempdima
+      \hskip -\leftskip
+      #1\nobreak\hfil \nobreak\hb@xt@\@pnumwidth{\hss\normalfont #2}\par
+      \penalty\@highpenalty
+    \endgroup
+  \fi}
+\makeatother
+
